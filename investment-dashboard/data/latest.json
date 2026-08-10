@@ -1,0 +1,43 @@
+{
+  "generated_at": "sample data – run updater",
+  "build": "starter",
+  "market_status": "Setup required",
+  "headline": ["uk10","de10","us10","gbpusd","gold","brent","silver","usdjpy","platinum","wti","hy_oas","vix"],
+  "series": {
+    "uk2":{"label":"UK 2Y Gilt","kind":"yield","value":null,"date":"Configure source","source":"custom/licensed feed"},
+    "uk5":{"label":"UK 5Y Gilt","kind":"yield","value":null,"date":"Configure source","source":"custom/licensed feed"},
+    "uk10":{"label":"UK 10Y Gilt","kind":"yield","value":null,"date":"Configure source","source":"custom/licensed feed"},
+    "de2":{"label":"Germany 2Y","kind":"yield","value":null,"date":"Configure source","source":"custom/licensed feed"},
+    "de5":{"label":"Germany 5Y","kind":"yield","value":null,"date":"Configure source","source":"custom/licensed feed"},
+    "de10":{"label":"Germany 10Y","kind":"yield","value":null,"date":"Configure source","source":"custom/licensed feed"},
+    "us2":{"label":"US Treasury 2Y","kind":"yield","value":null,"date":"FRED after updater","source":"FRED / U.S. Treasury"},
+    "us5":{"label":"US Treasury 5Y","kind":"yield","value":null,"date":"FRED after updater","source":"FRED / U.S. Treasury"},
+    "us10":{"label":"US Treasury 10Y","kind":"yield","value":null,"date":"FRED after updater","source":"FRED / U.S. Treasury"},
+    "gbpusd":{"label":"GBP / USD","kind":"fx","value":null,"decimals":4,"date":"ECB after updater","source":"ECB"},
+    "gbpcad":{"label":"GBP / CAD","kind":"fx","value":null,"decimals":4,"date":"ECB after updater","source":"ECB"},
+    "usdjpy":{"label":"USD / JPY","kind":"fx","value":null,"decimals":2,"date":"ECB after updater","source":"ECB"},
+    "audjpy":{"label":"AUD / JPY","kind":"fx","value":null,"decimals":2,"date":"ECB after updater","source":"ECB"},
+    "gold":{"label":"Gold","kind":"price","prefix":"$","value":null,"date":"Add TWELVE_DATA_API_KEY","source":"market data API"},
+    "silver":{"label":"Silver","kind":"price","prefix":"$","value":null,"date":"Add TWELVE_DATA_API_KEY","source":"market data API"},
+    "platinum":{"label":"Platinum","kind":"price","prefix":"$","value":null,"date":"Add TWELVE_DATA_API_KEY","source":"market data API"},
+    "wti":{"label":"WTI Crude","kind":"price","prefix":"$","value":null,"date":"FRED after updater","source":"EIA via FRED"},
+    "brent":{"label":"Brent Crude","kind":"price","prefix":"$","value":null,"date":"FRED after updater","source":"EIA via FRED"},
+    "vix":{"label":"VIX","kind":"index","value":null,"date":"FRED after updater","source":"CBOE via FRED"},
+    "hy_oas":{"label":"US HY OAS","kind":"spread","value":null,"date":"FRED after updater","source":"ICE BofA via FRED"},
+    "gold_silver":{"label":"Gold / Silver Ratio","kind":"ratio","value":null,"date":"derived","source":"derived"},
+    "brent_wti":{"label":"Brent – WTI Spread","kind":"price","prefix":"$","value":null,"date":"derived","source":"derived"},
+    "carry_200d":{"label":"USD/JPY vs 200D","kind":"ratio","value":null,"date":"derived","source":"derived"},
+    "re_funding":{"label":"UK Funding Pulse","kind":"index","value":null,"date":"derived","source":"derived"}
+  },
+  "sections": {
+    "rates":["uk2","uk5","uk10","de2","de5","de10","us2","us5","us10","hy_oas"],
+    "fx":["gbpusd","gbpcad","usdjpy","audjpy","carry_200d","vix"],
+    "commodities":["gold","silver","platinum","wti","brent","gold_silver","brent_wti"],
+    "realestate":["uk5","uk10","de5","de10","hy_oas","gbpusd","re_funding"],
+    "risk":["vix","hy_oas","us10","gold","usdjpy"]
+  },
+  "signals": {
+    "real_estate":{"status":"NEUTRAL","summary":"Funding signal will activate once rate and credit series are populated.","drivers":[{"label":"UK 5Y","value":"—"},{"label":"Germany 5Y","value":"—"},{"label":"HY OAS","value":"—"}]},
+    "carry":{"status":"NORMAL","summary":"Carry-risk logic will activate when USD/JPY history, VIX and credit data are populated.","drivers":[{"label":"USD/JPY vs 200D","value":"—"},{"label":"Yen 1D","value":"—"},{"label":"HY 5D","value":"—"}]}
+  }
+}

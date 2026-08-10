@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Market & Real Estate Dashboard</title>
+  <link rel="stylesheet" href="assets/dashboard.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">GLOBAL MARKETS • REAL ESTATE • COMMODITIES</p>
+        <h1>Investment Dashboard</h1>
+      </div>
+      <div class="status-wrap">
+        <span id="market-status" class="pill neutral">Loading</span>
+        <div class="asof" id="asof">As of —</div>
+      </div>
+    </header>
+
+    <section class="headline-grid" id="headline-grid"></section>
+
+    <section class="signal-row">
+      <article class="panel signal-panel">
+        <div class="panel-head"><h2>Real Estate Funding Pulse</h2><span id="re-signal" class="pill neutral">—</span></div>
+        <p id="re-summary" class="summary">Loading funding conditions…</p>
+        <div class="mini-grid" id="re-drivers"></div>
+      </article>
+      <article class="panel signal-panel">
+        <div class="panel-head"><h2>Yen Carry Risk</h2><span id="carry-signal" class="pill neutral">—</span></div>
+        <p id="carry-summary" class="summary">Loading carry indicators…</p>
+        <div class="mini-grid" id="carry-drivers"></div>
+      </article>
+    </section>
+
+    <nav class="tabs" aria-label="Dashboard sections">
+      <button class="tab active" data-tab="rates">Rates & Funding</button>
+      <button class="tab" data-tab="fx">FX & Carry</button>
+      <button class="tab" data-tab="commodities">Commodities</button>
+      <button class="tab" data-tab="realestate">Real Estate</button>
+      <button class="tab" data-tab="risk">Macro & Risk</button>
+    </nav>
+
+    <section id="tab-content" class="panel table-panel"></section>
+
+    <footer>
+      <span>Values may be delayed. Each row shows its own observation date.</span>
+      <span id="build-id"></span>
+    </footer>
+  </main>
+  <script src="assets/dashboard.js"></script>
+</body>
+</html>
