@@ -1,15 +1,100 @@
-const fmt=(x,d=2)=>x==null?'—':Number(x).toLocaleString(undefined,{minimumFractionDigits:d,maximumFractionDigits:d});
-const cls=x=>x==null?'flat':x>0?'up':x<0?'down':'flat';
-const signed=(x,suffix='%')=>x==null?'—':`${x>0?'+':''}${fmt(x,2)}${suffix}`;
-const ageLabel=d=>d||'—';
-let DATA=null;
-const units={yield:'%',price:'',fx:'',spread:' bp',index:'',position:'',ratio:''};
-function valueText(m){if(m.value==null)return '—';if(m.kind==='yield')return `${fmt(m.value,2)}%`;if(m.kind==='spread')return `${fmt(m.value,0)} bp`;if(m.prefix)return `${m.prefix}${fmt(m.value,m.decimals??2)}`;return `${fmt(m.value,m.decimals??2)}${m.suffix||''}`}
-function metricCard(m){return `<article class="metric"><div class="label">${m.label}</div><div class="value">${valueText(m)}</div><div class="moves"><span class="${cls(m.change_1d)}">1D ${signed(m.change_1d,m.change_unit||'%')}</span><span class="${cls(m.change_5d)}">5D ${signed(m.change_5d,m.change_unit||'%')}</span></div><div class="source">${ageLabel(m.date)}</div></article>`}
-function renderHead(){const keys=DATA.headline||[];document.querySelector('#headline-grid').innerHTML=keys.map(k=>metricCard(DATA.series[k])).join('');document.querySelector('#asof').textContent=`Updated ${DATA.generated_at||'—'}`;document.querySelector('#build-id').textContent=DATA.build||'';document.querySelector('#market-status').textContent=DATA.market_status||'Latest available';}
-function statusClass(s){s=(s||'').toLowerCase();return ['normal','arm','confirm','fire'].includes(s)?s:'neutral'}
-function renderSignals(){for(const key of ['real_estate','carry']){const sig=DATA.signals[key];const pref=key==='real_estate'?'re':'carry';const badge=document.querySelector(`#${pref}-signal`);badge.textContent=sig.status;badge.className=`pill ${statusClass(sig.status)}`;document.querySelector(`#${pref}-summary`).textContent=sig.summary;document.querySelector(`#${pref}-drivers`).innerHTML=sig.drivers.map(d=>`<div class="mini"><span class="k">${d.label}</span><span class="v">${d.value}</span></div>`).join('')}}
-function tableFor(section){const ids=DATA.sections[section]||[];const rows=ids.map(id=>{const m=DATA.series[id];return `<tr><td><strong>${m.label}</strong><br><span class="source">${m.source||''}</span></td><td>${valueText(m)}</td><td class="${cls(m.change_1d)}">${signed(m.change_1d,m.change_unit||'%')}</td><td class="${cls(m.change_5d)}">${signed(m.change_5d,m.change_unit||'%')}</td><td>${m.signal||'—'}</td><td class="${m.stale?'stale':'source'}">${ageLabel(m.date)}</td></tr>`}).join('');return `<div class="table-wrap"><table><thead><tr><th>Indicator</th><th>Level</th><th>1D</th><th>5D</th><th>Signal</th><th>Observation</th></tr></thead><tbody>${rows}</tbody></table></div>`}
-function renderTab(tab){document.querySelector('#tab-content').innerHTML=tableFor(tab);document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));}
-async function boot(){try{const r=await fetch(`data/latest.json?v=${Date.now()}`);if(!r.ok)throw new Error('data');DATA=await r.json();renderHead();renderSignals();renderTab('rates');document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>renderTab(b.dataset.tab)));}catch(e){document.querySelector('#market-status').textContent='Data unavailable';document.querySelector('#market-status').className='pill fire';document.querySelector('#asof').textContent='Check updater workflow';}}
+const fmt = (value, digits = 2) => value == null ? "—" : Number(value).toLocaleString(undefined, { minimumFractionDigits: digits, maximumFractionDigits: digits });
+const direction = value => value == null ? "flat" : value > 0 ? "up" : value < 0 ? "down" : "flat";
+const signed = (value, suffix = "%", digits = 2) => value == null ? "—" : `${value > 0 ? "+" : ""}${fmt(value, digits)}${suffix}`;
+const escapeHtml = value => String(value ?? "").replace(/[&<>'"]/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[char]));
+let DATA = null;
+
+function valueText(metric) {
+  if (!metric || metric.value == null) return "—";
+  if (metric.kind === "yield") return `${fmt(metric.value, metric.decimals ?? 2)}%`;
+  if (metric.kind === "spread") return metric.suffix ? `${fmt(metric.value, metric.decimals ?? 0)}${metric.suffix}` : `${fmt(metric.value, metric.decimals ?? 2)}%`;
+  if (metric.kind === "position") return fmt(metric.value, 0);
+  if (metric.prefix) return `${metric.prefix}${fmt(metric.value, metric.decimals ?? 2)}`;
+  return `${fmt(metric.value, metric.decimals ?? 2)}${metric.suffix || ""}`;
+}
+
+function availability(metric) {
+  if (!metric || metric.value == null) return "unavailable";
+  if (metric.stale) return "stale";
+  if (metric.proxy) return "proxy";
+  return "current";
+}
+
+function metricCard(metric) {
+  if (!metric) return "";
+  const state = availability(metric);
+  const stateLabel = state === "current" ? "" : `<span class="data-state ${state}">${state}</span>`;
+  return `<article class="metric ${state}">
+    <div class="metric-top"><div class="label">${escapeHtml(metric.label)}</div>${stateLabel}</div>
+    <div class="value">${valueText(metric)}</div>
+    <div class="moves"><span class="${direction(metric.change_1d)}">1D ${signed(metric.change_1d, metric.change_unit || "%")}</span><span class="${direction(metric.change_5d)}">5D ${signed(metric.change_5d, metric.change_unit || "%")}</span></div>
+    <div class="source" title="${escapeHtml(metric.feed_error || metric.source || "")}">${escapeHtml(metric.date || "Unavailable")}</div>
+  </article>`;
+}
+
+function renderHead() {
+  document.querySelector("#headline-grid").innerHTML = (DATA.headline || []).map(key => metricCard(DATA.series[key])).join("");
+  document.querySelector("#asof").textContent = `Updated ${DATA.generated_at || "—"}`;
+  document.querySelector("#build-id").textContent = DATA.build || "";
+  const status = document.querySelector("#market-status");
+  status.textContent = DATA.market_status || "Latest available";
+  status.className = `pill ${(DATA.feed_health || []).some(feed => feed.status === "error") ? "arm" : "normal"}`;
+}
+
+function statusClass(status) {
+  const normalised = (status || "").toLowerCase();
+  return ["normal", "arm", "confirm", "fire", "supportive", "tightening"].includes(normalised) ? normalised : "neutral";
+}
+
+function renderSignals() {
+  for (const key of ["real_estate", "carry"]) {
+    const signal = DATA.signals?.[key];
+    if (!signal) continue;
+    const prefix = key === "real_estate" ? "re" : "carry";
+    const badge = document.querySelector(`#${prefix}-signal`);
+    badge.textContent = signal.status;
+    badge.className = `pill ${statusClass(signal.status)}`;
+    document.querySelector(`#${prefix}-summary`).textContent = signal.summary;
+    document.querySelector(`#${prefix}-drivers`).innerHTML = (signal.drivers || []).map(driver => `<div class="mini"><span class="k">${escapeHtml(driver.label)}</span><span class="v">${escapeHtml(driver.value)}</span></div>`).join("");
+  }
+}
+
+function tableFor(section) {
+  const rows = (DATA.sections?.[section] || []).map(key => DATA.series[key]).filter(Boolean).map(metric => {
+    const state = availability(metric);
+    const detail = metric.expiry ? ` · exp ${metric.expiry}` : "";
+    return `<tr class="${state}">
+      <td><strong>${escapeHtml(metric.label)}</strong><br><span class="source">${escapeHtml(metric.source || "")}${escapeHtml(detail)}</span></td>
+      <td>${valueText(metric)}</td>
+      <td class="${direction(metric.change_1d)}">${signed(metric.change_1d, metric.change_unit || "%")}</td>
+      <td class="${direction(metric.change_5d)}">${signed(metric.change_5d, metric.change_unit || "%")}</td>
+      <td>${escapeHtml(metric.signal || (metric.proxy ? "PROXY" : "—"))}</td>
+      <td><span class="observation ${state}" title="${escapeHtml(metric.feed_error || "")}">${escapeHtml(metric.date || "Unavailable")}</span></td>
+    </tr>`;
+  }).join("");
+  return `<div class="table-wrap"><table><thead><tr><th>Indicator</th><th>Level</th><th>1D</th><th>5D</th><th>Signal</th><th>Observation</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+
+function renderTab(tab) {
+  document.querySelector("#tab-content").innerHTML = tableFor(tab);
+  document.querySelectorAll(".tab").forEach(button => button.classList.toggle("active", button.dataset.tab === tab));
+}
+
+async function boot() {
+  try {
+    const response = await fetch(`data/latest.json?v=${Date.now()}`);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    DATA = await response.json();
+    renderHead();
+    renderSignals();
+    renderTab("rates");
+    document.querySelectorAll(".tab").forEach(button => button.addEventListener("click", () => renderTab(button.dataset.tab)));
+  } catch (error) {
+    const status = document.querySelector("#market-status");
+    status.textContent = "Data unavailable";
+    status.className = "pill fire";
+    document.querySelector("#asof").textContent = "Check the updater workflow";
+  }
+}
+
 boot();

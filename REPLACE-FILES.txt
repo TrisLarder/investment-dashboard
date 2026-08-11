@@ -1,0 +1,20 @@
+INVESTMENT DASHBOARD — REVISION 3
+
+1. Open the existing investment-dashboard repository on GitHub.
+2. Upload/replace these items from the unzipped package at the repository root:
+   .github/workflows/update-markets.yml
+   assets/dashboard.css
+   assets/dashboard.js
+   scripts/update_data.py
+   tests/test_update_data.py
+   .gitignore
+   index.html
+   README.md
+   requirements.txt
+3. Keep the repository's existing data/latest.json and data/history.json so the live history is preserved.
+4. Commit directly to main.
+5. Open Actions → Update market data → Run workflow → Run workflow.
+6. Wait for a green tick, then refresh the existing GitHub Pages address.
+
+No Pages setting changes and no new secrets are required. Keep the existing
+FRED_API_KEY and TWELVE_DATA_API_KEY repository secrets.
