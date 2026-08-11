@@ -1,43 +1,356 @@
 {
-  "generated_at": "sample data – run updater",
-  "build": "starter",
-  "market_status": "Setup required",
-  "headline": ["uk10","de10","us10","gbpusd","gold","brent","silver","usdjpy","platinum","wti","hy_oas","vix"],
+  "generated_at": "2026-08-11 11:56 UTC",
+  "build": "b01eb6c",
+  "market_status": "Latest available",
+  "headline": [
+    "uk10",
+    "de10",
+    "us10",
+    "gbpusd",
+    "gold",
+    "brent",
+    "silver",
+    "usdjpy",
+    "platinum",
+    "wti",
+    "hy_oas",
+    "vix"
+  ],
   "series": {
-    "uk2":{"label":"UK 2Y Gilt","kind":"yield","value":null,"date":"Configure source","source":"custom/licensed feed"},
-    "uk5":{"label":"UK 5Y Gilt","kind":"yield","value":null,"date":"Configure source","source":"custom/licensed feed"},
-    "uk10":{"label":"UK 10Y Gilt","kind":"yield","value":null,"date":"Configure source","source":"custom/licensed feed"},
-    "de2":{"label":"Germany 2Y","kind":"yield","value":null,"date":"Configure source","source":"custom/licensed feed"},
-    "de5":{"label":"Germany 5Y","kind":"yield","value":null,"date":"Configure source","source":"custom/licensed feed"},
-    "de10":{"label":"Germany 10Y","kind":"yield","value":null,"date":"Configure source","source":"custom/licensed feed"},
-    "us2":{"label":"US Treasury 2Y","kind":"yield","value":null,"date":"FRED after updater","source":"FRED / U.S. Treasury"},
-    "us5":{"label":"US Treasury 5Y","kind":"yield","value":null,"date":"FRED after updater","source":"FRED / U.S. Treasury"},
-    "us10":{"label":"US Treasury 10Y","kind":"yield","value":null,"date":"FRED after updater","source":"FRED / U.S. Treasury"},
-    "gbpusd":{"label":"GBP / USD","kind":"fx","value":null,"decimals":4,"date":"ECB after updater","source":"ECB"},
-    "gbpcad":{"label":"GBP / CAD","kind":"fx","value":null,"decimals":4,"date":"ECB after updater","source":"ECB"},
-    "usdjpy":{"label":"USD / JPY","kind":"fx","value":null,"decimals":2,"date":"ECB after updater","source":"ECB"},
-    "audjpy":{"label":"AUD / JPY","kind":"fx","value":null,"decimals":2,"date":"ECB after updater","source":"ECB"},
-    "gold":{"label":"Gold","kind":"price","prefix":"$","value":null,"date":"Add TWELVE_DATA_API_KEY","source":"market data API"},
-    "silver":{"label":"Silver","kind":"price","prefix":"$","value":null,"date":"Add TWELVE_DATA_API_KEY","source":"market data API"},
-    "platinum":{"label":"Platinum","kind":"price","prefix":"$","value":null,"date":"Add TWELVE_DATA_API_KEY","source":"market data API"},
-    "wti":{"label":"WTI Crude","kind":"price","prefix":"$","value":null,"date":"FRED after updater","source":"EIA via FRED"},
-    "brent":{"label":"Brent Crude","kind":"price","prefix":"$","value":null,"date":"FRED after updater","source":"EIA via FRED"},
-    "vix":{"label":"VIX","kind":"index","value":null,"date":"FRED after updater","source":"CBOE via FRED"},
-    "hy_oas":{"label":"US HY OAS","kind":"spread","value":null,"date":"FRED after updater","source":"ICE BofA via FRED"},
-    "gold_silver":{"label":"Gold / Silver Ratio","kind":"ratio","value":null,"date":"derived","source":"derived"},
-    "brent_wti":{"label":"Brent – WTI Spread","kind":"price","prefix":"$","value":null,"date":"derived","source":"derived"},
-    "carry_200d":{"label":"USD/JPY vs 200D","kind":"ratio","value":null,"date":"derived","source":"derived"},
-    "re_funding":{"label":"UK Funding Pulse","kind":"index","value":null,"date":"derived","source":"derived"}
+    "uk2": {
+      "label": "UK Gilt 2Y",
+      "kind": "yield",
+      "value": 4.241245683040543,
+      "date": "2026-08-10",
+      "source": "Bank of England fitted nominal gilt spot curve",
+      "prefix": "",
+      "decimals": 2,
+      "change_1d": 5.547188822928195,
+      "change_5d": 2.9129707272857353,
+      "change_unit": " bp"
+    },
+    "uk5": {
+      "label": "UK Gilt 5Y",
+      "kind": "yield",
+      "value": 4.500528018169836,
+      "date": "2026-08-10",
+      "source": "Bank of England fitted nominal gilt spot curve",
+      "prefix": "",
+      "decimals": 2,
+      "change_1d": 6.095616658970826,
+      "change_5d": 3.048834798079536,
+      "change_unit": " bp"
+    },
+    "uk10": {
+      "label": "UK Gilt 10Y",
+      "kind": "yield",
+      "value": 5.052864799588587,
+      "date": "2026-08-10",
+      "source": "Bank of England fitted nominal gilt spot curve",
+      "prefix": "",
+      "decimals": 2,
+      "change_1d": 5.839567848342764,
+      "change_5d": 3.1833871467180863,
+      "change_unit": " bp"
+    },
+    "de2": {
+      "label": "Germany 2Y",
+      "kind": "yield",
+      "value": null,
+      "date": "Configure source",
+      "source": "custom/licensed feed"
+    },
+    "de5": {
+      "label": "Germany 5Y",
+      "kind": "yield",
+      "value": null,
+      "date": "Configure source",
+      "source": "custom/licensed feed"
+    },
+    "de10": {
+      "label": "Germany 10Y",
+      "kind": "yield",
+      "value": null,
+      "date": "Configure source",
+      "source": "custom/licensed feed"
+    },
+    "us2": {
+      "label": "US Treasury 2Y",
+      "kind": "yield",
+      "value": 4.19,
+      "date": "2026-08-07",
+      "source": "FRED / U.S. Treasury",
+      "prefix": "",
+      "decimals": 2,
+      "change_1d": -5.999999999999961,
+      "change_5d": -8.999999999999986,
+      "change_unit": " bp"
+    },
+    "us5": {
+      "label": "US Treasury 5Y",
+      "kind": "yield",
+      "value": 4.35,
+      "date": "2026-08-07",
+      "source": "FRED / U.S. Treasury",
+      "prefix": "",
+      "decimals": 2,
+      "change_1d": -5.000000000000071,
+      "change_5d": -10.000000000000053,
+      "change_unit": " bp"
+    },
+    "us10": {
+      "label": "US Treasury 10Y",
+      "kind": "yield",
+      "value": 4.65,
+      "date": "2026-08-07",
+      "source": "FRED / U.S. Treasury",
+      "prefix": "",
+      "decimals": 2,
+      "change_1d": -4.0000000000000036,
+      "change_5d": -9.999999999999964,
+      "change_unit": " bp"
+    },
+    "gbpusd": {
+      "label": "GBP / USD",
+      "kind": "fx",
+      "value": 1.350435341553205,
+      "date": "2026-08-10",
+      "source": "ECB",
+      "prefix": "",
+      "decimals": 4,
+      "change_1d": 0.40753105185142857,
+      "change_5d": 0.2529948879285815,
+      "change_unit": "%"
+    },
+    "gbpcad": {
+      "label": "GBP / CAD",
+      "kind": "fx",
+      "value": 1.8825454332963243,
+      "date": "2026-08-10",
+      "source": "ECB",
+      "prefix": "",
+      "decimals": 4,
+      "change_1d": -0.08879388201779026,
+      "change_5d": -0.3720331935825216,
+      "change_unit": "%"
+    },
+    "usdjpy": {
+      "label": "USD / JPY",
+      "kind": "fx",
+      "value": 158.64128083080917,
+      "date": "2026-08-10",
+      "source": "ECB",
+      "prefix": "",
+      "decimals": 2,
+      "change_1d": 0.19312168108758243,
+      "change_5d": 1.251987737696214,
+      "change_unit": "%"
+    },
+    "audjpy": {
+      "label": "AUD / JPY",
+      "kind": "fx",
+      "value": 112.0545265603032,
+      "date": "2026-08-10",
+      "source": "ECB",
+      "prefix": "",
+      "decimals": 2,
+      "change_1d": 0.5202235635133556,
+      "change_5d": 2.0723549362182236,
+      "change_unit": "%"
+    },
+    "gold": {
+      "label": "Gold",
+      "kind": "price",
+      "value": 4388.63925,
+      "date": "2026-08-11",
+      "source": "Twelve Data",
+      "prefix": "$",
+      "decimals": 2,
+      "change_1d": -0.030837179011455884,
+      "change_5d": 3.485638719458861,
+      "change_unit": "%"
+    },
+    "silver": {
+      "label": "Silver",
+      "kind": "price",
+      "prefix": "$",
+      "value": null,
+      "date": "Add TWELVE_DATA_API_KEY",
+      "source": "market data API"
+    },
+    "platinum": {
+      "label": "Platinum",
+      "kind": "price",
+      "prefix": "$",
+      "value": null,
+      "date": "Add TWELVE_DATA_API_KEY",
+      "source": "market data API"
+    },
+    "wti": {
+      "label": "WTI Crude",
+      "kind": "price",
+      "value": 81.96,
+      "date": "2026-08-03",
+      "source": "EIA via FRED",
+      "prefix": "$",
+      "decimals": 2,
+      "change_1d": -4.874651810584963,
+      "change_5d": -2.7181008902077197,
+      "change_unit": "%"
+    },
+    "brent": {
+      "label": "Brent Crude",
+      "kind": "price",
+      "value": 88.9,
+      "date": "2026-08-03",
+      "source": "EIA via FRED",
+      "prefix": "$",
+      "decimals": 2,
+      "change_1d": -8.30324909747292,
+      "change_5d": -3.1801350468307454,
+      "change_unit": "%"
+    },
+    "vix": {
+      "label": "VIX",
+      "kind": "index",
+      "value": 14.9,
+      "date": "2026-08-07",
+      "source": "CBOE via FRED",
+      "prefix": "",
+      "decimals": 2,
+      "change_1d": -1.650165016501648,
+      "change_5d": -6.816760475297057,
+      "change_unit": "%"
+    },
+    "hy_oas": {
+      "label": "US HY OAS",
+      "kind": "spread",
+      "value": 2.7,
+      "date": "2026-08-07",
+      "source": "ICE BofA via FRED",
+      "prefix": "",
+      "decimals": 2,
+      "change_1d": -0.9999999999999787,
+      "change_5d": -14.999999999999991,
+      "change_unit": " bp"
+    },
+    "gold_silver": {
+      "label": "Gold / Silver Ratio",
+      "kind": "ratio",
+      "value": null,
+      "date": "derived",
+      "source": "derived"
+    },
+    "brent_wti": {
+      "label": "Brent \u2013 WTI Spread",
+      "kind": "price",
+      "prefix": "$",
+      "value": 6.940000000000012,
+      "date": "2026-08-03",
+      "source": "derived",
+      "decimals": 2
+    },
+    "carry_200d": {
+      "label": "USD/JPY vs 200D",
+      "kind": "ratio",
+      "value": 0.42959621669100834,
+      "suffix": "%",
+      "date": "2026-08-10",
+      "source": "derived from ECB",
+      "decimals": 2,
+      "signal": "NORMAL"
+    },
+    "re_funding": {
+      "label": "UK Funding Pulse",
+      "kind": "index",
+      "value": null,
+      "date": "derived",
+      "source": "derived"
+    }
   },
   "sections": {
-    "rates":["uk2","uk5","uk10","de2","de5","de10","us2","us5","us10","hy_oas"],
-    "fx":["gbpusd","gbpcad","usdjpy","audjpy","carry_200d","vix"],
-    "commodities":["gold","silver","platinum","wti","brent","gold_silver","brent_wti"],
-    "realestate":["uk5","uk10","de5","de10","hy_oas","gbpusd","re_funding"],
-    "risk":["vix","hy_oas","us10","gold","usdjpy"]
+    "rates": [
+      "uk2",
+      "uk5",
+      "uk10",
+      "de2",
+      "de5",
+      "de10",
+      "us2",
+      "us5",
+      "us10",
+      "hy_oas"
+    ],
+    "fx": [
+      "gbpusd",
+      "gbpcad",
+      "usdjpy",
+      "audjpy",
+      "carry_200d",
+      "vix"
+    ],
+    "commodities": [
+      "gold",
+      "silver",
+      "platinum",
+      "wti",
+      "brent",
+      "gold_silver",
+      "brent_wti"
+    ],
+    "realestate": [
+      "uk5",
+      "uk10",
+      "de5",
+      "de10",
+      "hy_oas",
+      "gbpusd",
+      "re_funding"
+    ],
+    "risk": [
+      "vix",
+      "hy_oas",
+      "us10",
+      "gold",
+      "usdjpy"
+    ]
   },
   "signals": {
-    "real_estate":{"status":"NEUTRAL","summary":"Funding signal will activate once rate and credit series are populated.","drivers":[{"label":"UK 5Y","value":"—"},{"label":"Germany 5Y","value":"—"},{"label":"HY OAS","value":"—"}]},
-    "carry":{"status":"NORMAL","summary":"Carry-risk logic will activate when USD/JPY history, VIX and credit data are populated.","drivers":[{"label":"USD/JPY vs 200D","value":"—"},{"label":"Yen 1D","value":"—"},{"label":"HY 5D","value":"—"}]}
+    "real_estate": {
+      "status": "NEUTRAL",
+      "summary": "Directional funding pulse based on 5-day moves in medium-term sovereign yields and credit spreads; it is not a property valuation model.",
+      "drivers": [
+        {
+          "label": "UK 5Y",
+          "value": "+3 bp"
+        },
+        {
+          "label": "Germany 5Y",
+          "value": "\u2014"
+        },
+        {
+          "label": "HY OAS",
+          "value": "-15 bp"
+        }
+      ]
+    },
+    "carry": {
+      "status": "NORMAL",
+      "summary": "No high-specificity forced-deleveraging confirmation.",
+      "drivers": [
+        {
+          "label": "USD/JPY vs 200D",
+          "value": "+0.43%"
+        },
+        {
+          "label": "Yen 1D",
+          "value": "-0.19%"
+        },
+        {
+          "label": "HY 5D",
+          "value": "-15 bp"
+        }
+      ]
+    }
   }
 }
