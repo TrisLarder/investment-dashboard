@@ -38,6 +38,15 @@ class UpdateDataTests(unittest.TestCase):
         self.assertEqual(get.call_args.kwargs["headers"]["Accept"], "text/csv")
 
     @patch.object(update_data.S, "get")
+    def test_bundesbank_accepts_comma_delimited_sdmx_csv(self, get):
+        get.return_value = self.response(text=(
+            "DATAFLOW,TIME_PERIOD,OBS_VALUE\n"
+            "BBK:BBSSY(1.0),2026-08-07,2.76\n"
+            "BBK:BBSSY(1.0),2026-08-10,2.79\n"
+        ))
+        self.assertEqual(update_data.bundesbank_current_yield("de2")[-1], ("2026-08-10", 2.79))
+
+    @patch.object(update_data.S, "get")
     def test_twelve_data_error_is_not_treated_as_empty_success(self, get):
         get.return_value = self.response(payload={"status": "error", "code": 400, "message": "symbol unavailable"})
         with patch.object(update_data, "TWELVE_KEY", "test-key"):
@@ -89,6 +98,14 @@ class UpdateDataTests(unittest.TestCase):
         self.assertEqual(series["de2"]["value"], 2.7)
         self.assertTrue(series["de2"]["stale"])
         self.assertEqual(series["de2"]["feed_status"], "stale")
+
+    def test_error_cleaner_redacts_api_credentials(self):
+        with patch.object(update_data, "TWELVE_KEY", "super-secret-value"):
+            message = update_data._clean_error(
+                RuntimeError("404 for https://example.test/path?apikey=super-secret-value&format=JSON")
+            )
+        self.assertNotIn("super-secret-value", message)
+        self.assertIn("apikey=[redacted]", message)
 
 
 if __name__ == "__main__":
