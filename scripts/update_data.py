@@ -8,6 +8,7 @@ import csv
 import io
 import json
 import os
+import re
 import statistics
 import tempfile
 import zipfile
@@ -53,6 +54,14 @@ def _to_float(value):
 
 def _clean_error(exc):
     text = " ".join(str(exc).split())
+    for secret in (FRED_KEY, TWELVE_KEY):
+        if secret:
+            text = text.replace(secret, "[redacted]")
+    text = re.sub(
+        r"(?i)(api[_-]?key|apikey|access[_-]?token|token|secret)=([^&\s]+)",
+        r"\1=[redacted]",
+        text,
+    )
     return text[:220] or exc.__class__.__name__
 
 
@@ -127,16 +136,22 @@ def bundesbank_current_yield(series_key):
     url = f"https://api.statistiken.bundesbank.de/rest/data/BBSSY/{BUBA_SERIES[series_key]}"
     response = S.get(
         url,
-        params={"lastNObservations": 12, "detail": "dataonly"},
+        params={"lastNObservations": 12},
         headers={"Accept": "text/csv", "Accept-Language": "en"},
         timeout=40,
     )
     response.raise_for_status()
-    rows = csv.DictReader(io.StringIO(response.text), delimiter=";")
+    sample = response.text[:4096]
+    try:
+        dialect = csv.Sniffer().sniff(sample, delimiters=",;\t")
+    except csv.Error:
+        dialect = csv.excel
+    rows = csv.DictReader(io.StringIO(response.text), dialect=dialect)
     values = []
     for row in rows:
-        day = row.get("TIME_PERIOD")
-        value = _to_float(row.get("OBS_VALUE"))
+        normalised = {str(key).strip().lstrip("\ufeff").upper(): value for key, value in row.items() if key is not None}
+        day = normalised.get("TIME_PERIOD") or normalised.get("DATE")
+        value = _to_float(normalised.get("OBS_VALUE") or normalised.get("VALUE"))
         if day and value is not None:
             values.append((day[:10], value))
     if not values:
@@ -439,6 +454,7 @@ def derived(series, key, label, kind, value, day, source="Derived", **kwargs):
 
 def fetch_with_fallback(series, feed_health, key, label, symbol, fallback_symbol, fallback_source, kind="price", prefix="$", decimals=2):
     errors = []
+    primary_health_index = None
     if TWELVE_KEY:
         try:
             put(series, key, label, kind, twelve(symbol), "Twelve Data", prefix=prefix, decimals=decimals, stale_days=4)
@@ -447,10 +463,13 @@ def fetch_with_fallback(series, feed_health, key, label, symbol, fallback_symbol
         except Exception as exc:
             errors.append(_clean_error(exc))
             feed_health.append({"name": f"Twelve Data {symbol}", "status": "error", "message": errors[-1]})
+            primary_health_index = len(feed_health) - 1
     else:
         errors.append("TWELVE_DATA_API_KEY is not configured")
     try:
         put(series, key, f"{label} (futures proxy)", kind, yahoo_chart(fallback_symbol), fallback_source, prefix=prefix, decimals=decimals, stale_days=4, extra={"proxy": True})
+        if primary_health_index is not None:
+            feed_health[primary_health_index]["status"] = "fallback"
         feed_health.append({"name": fallback_source, "status": "fallback" if TWELVE_KEY else "ok"})
     except Exception as exc:
         errors.append(_clean_error(exc))
