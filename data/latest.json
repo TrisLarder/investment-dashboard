@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-11 18:07 UTC",
-  "build": "bea981b",
-  "market_status": "5 feed issues · 3 stale",
+  "generated_at": "2026-08-12 08:39 UTC",
+  "build": "3f1906a",
+  "market_status": "0 feed issues · 2 stale",
   "headline": [
     "uk10",
     "de10",
@@ -62,49 +62,55 @@
     "de2": {
       "label": "Germany 2Y",
       "kind": "yield",
-      "value": null,
-      "date": "Unavailable",
-      "source": "Deutsche Bundesbank",
+      "value": 2.82,
+      "date": "2026-08-11",
+      "source": "Deutsche Bundesbank current Federal securities",
       "prefix": "",
       "decimals": 2,
-      "stale": true,
-      "feed_status": "unavailable",
-      "feed_error": "Bundesbank returned no observations"
+      "change_1d": 6.000000000000005,
+      "change_5d": 4.0000000000000036,
+      "change_unit": " bp",
+      "stale": false,
+      "feed_status": "ok"
     },
     "de5": {
       "label": "Germany 5Y",
       "kind": "yield",
-      "value": null,
-      "date": "Unavailable",
-      "source": "Deutsche Bundesbank",
+      "value": 2.93,
+      "date": "2026-08-11",
+      "source": "Deutsche Bundesbank current Federal securities",
       "prefix": "",
       "decimals": 2,
-      "stale": true,
-      "feed_status": "unavailable",
-      "feed_error": "Bundesbank returned no observations"
+      "change_1d": 6.000000000000005,
+      "change_5d": 3.000000000000025,
+      "change_unit": " bp",
+      "stale": false,
+      "feed_status": "ok"
     },
     "de10": {
       "label": "Germany 10Y",
       "kind": "yield",
-      "value": null,
-      "date": "Unavailable",
-      "source": "Deutsche Bundesbank",
+      "value": 3.2,
+      "date": "2026-08-11",
+      "source": "Deutsche Bundesbank current Federal securities",
       "prefix": "",
       "decimals": 2,
-      "stale": true,
-      "feed_status": "unavailable",
-      "feed_error": "Bundesbank returned no observations"
+      "change_1d": 6.000000000000005,
+      "change_5d": 4.0000000000000036,
+      "change_unit": " bp",
+      "stale": false,
+      "feed_status": "ok"
     },
     "us2": {
       "label": "US Treasury 2Y",
       "kind": "yield",
-      "value": 4.19,
-      "date": "2026-08-07",
+      "value": 4.25,
+      "date": "2026-08-10",
       "source": "FRED / U.S. Treasury",
       "prefix": "",
       "decimals": 2,
-      "change_1d": -5.999999999999961,
-      "change_5d": -8.999999999999986,
+      "change_1d": 5.999999999999961,
+      "change_5d": 0.0,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -112,13 +118,13 @@
     "us5": {
       "label": "US Treasury 5Y",
       "kind": "yield",
-      "value": 4.35,
-      "date": "2026-08-07",
+      "value": 4.41,
+      "date": "2026-08-10",
       "source": "FRED / U.S. Treasury",
       "prefix": "",
       "decimals": 2,
-      "change_1d": -5.000000000000071,
-      "change_5d": -10.000000000000053,
+      "change_1d": 6.00000000000005,
+      "change_5d": 0.9999999999999787,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -126,13 +132,13 @@
     "us10": {
       "label": "US Treasury 10Y",
       "kind": "yield",
-      "value": 4.65,
-      "date": "2026-08-07",
+      "value": 4.72,
+      "date": "2026-08-10",
       "source": "FRED / U.S. Treasury",
       "prefix": "",
       "decimals": 2,
-      "change_1d": -4.0000000000000036,
-      "change_5d": -9.999999999999964,
+      "change_1d": 6.99999999999994,
+      "change_5d": 1.9999999999999574,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -196,13 +202,13 @@
     "gold": {
       "label": "Gold spot",
       "kind": "price",
-      "value": 4366.12062,
-      "date": "2026-08-11",
+      "value": 4406.28808,
+      "date": "2026-08-12",
       "source": "Twelve Data",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -0.5437908443134298,
-      "change_5d": 2.9546415980533647,
+      "change_1d": 0.8831153176757089,
+      "change_5d": 1.46580664566196,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -210,13 +216,13 @@
     "silver": {
       "label": "Silver spot (futures proxy)",
       "kind": "price",
-      "value": 64.74500274658203,
-      "date": "2026-08-11",
+      "value": 66.47000122070312,
+      "date": "2026-08-12",
       "source": "COMEX silver futures fallback via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -0.5544804556683935,
-      "change_5d": 7.807717813015302,
+      "change_1d": 2.626262721449635,
+      "change_5d": 7.038764337595715,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -225,13 +231,13 @@
     "platinum": {
       "label": "Platinum spot (futures proxy)",
       "kind": "price",
-      "value": 1750.5999755859375,
-      "date": "2026-08-11",
+      "value": 1769.800048828125,
+      "date": "2026-08-12",
       "source": "NYMEX platinum futures fallback via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 0.34966899317496747,
-      "change_5d": 0.18885861990478592,
+      "change_1d": 1.374727879983162,
+      "change_5d": 1.8648569102552859,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -248,7 +254,7 @@
       "change_1d": -4.874651810584963,
       "change_5d": -2.7181008902077197,
       "change_unit": "%",
-      "stale": false,
+      "stale": true,
       "feed_status": "ok"
     },
     "brent": {
@@ -262,7 +268,7 @@
       "change_1d": -8.30324909747292,
       "change_5d": -3.1801350468307454,
       "change_unit": "%",
-      "stale": false,
+      "stale": true,
       "feed_status": "ok"
     },
     "vix": {
@@ -296,8 +302,8 @@
     "gold_silver": {
       "label": "Gold / Silver ratio",
       "kind": "ratio",
-      "value": 67.43563881044847,
-      "date": "2026-08-11",
+      "value": 66.28987511779363,
+      "date": "2026-08-12",
       "source": "Derived",
       "decimals": 1,
       "stale": false,
@@ -400,13 +406,13 @@
     "copper": {
       "label": "Copper (COMEX)",
       "kind": "price",
-      "value": 6.63700008392334,
-      "date": "2026-08-11",
+      "value": 6.672500133514404,
+      "date": "2026-08-12",
       "source": "COMEX copper futures via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 0.6444767405496155,
-      "change_5d": 0.2795172709281424,
+      "change_1d": 0.9150052187418378,
+      "change_5d": -0.45501916809950194,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -415,13 +421,13 @@
     "uranium": {
       "label": "Uranium equities proxy (URA)",
       "kind": "price",
-      "value": 44.93000030517578,
+      "value": 45.16999816894531,
       "date": "2026-08-11",
       "source": "Global X Uranium ETF via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 1.2392952316887085,
-      "change_5d": 5.742524194687282,
+      "change_1d": 1.780074542174015,
+      "change_5d": 6.307357930363877,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -447,8 +453,8 @@
     "vix_front": {
       "label": "VIX front future",
       "kind": "index",
-      "value": 16.9577,
-      "date": "2026-08-10",
+      "value": 16.7881,
+      "date": "2026-08-11",
       "source": "Cboe official settlement",
       "decimals": 2,
       "stale": false,
@@ -458,8 +464,8 @@
     "vix_second": {
       "label": "VIX second future",
       "kind": "index",
-      "value": 18.5975,
-      "date": "2026-08-10",
+      "value": 18.4293,
+      "date": "2026-08-11",
       "source": "Cboe official settlement",
       "decimals": 2,
       "stale": false,
@@ -469,8 +475,8 @@
     "vix_curve": {
       "label": "VIX front – second",
       "kind": "index",
-      "value": -1.639800000000001,
-      "date": "2026-08-10",
+      "value": -1.6412000000000013,
+      "date": "2026-08-11",
       "source": "Derived from Cboe official settlements",
       "decimals": 2,
       "stale": false,
@@ -480,13 +486,13 @@
     "sonia": {
       "label": "SONIA",
       "kind": "yield",
-      "value": 3.7318,
-      "date": "2026-08-07",
+      "value": 3.7315,
+      "date": "2026-08-10",
       "source": "Bank of England",
       "prefix": "",
       "decimals": 2,
-      "change_1d": -0.0500000000000167,
-      "change_5d": 0.04999999999997229,
+      "change_1d": -0.02999999999997449,
+      "change_5d": -0.05999999999999339,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -495,11 +501,11 @@
       "label": "€STR",
       "kind": "yield",
       "value": 2.184,
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "source": "European Central Bank",
       "prefix": "",
       "decimals": 2,
-      "change_1d": -0.09999999999998899,
+      "change_1d": 0.0,
       "change_5d": -0.09999999999998899,
       "change_unit": " bp",
       "stale": false,
@@ -509,7 +515,7 @@
       "label": "ECB deposit facility",
       "kind": "yield",
       "value": 2.25,
-      "date": "2026-08-11",
+      "date": "2026-08-12",
       "source": "European Central Bank",
       "prefix": "",
       "decimals": 2,
@@ -522,7 +528,7 @@
     "us_jp_2y": {
       "label": "US–Japan 2Y spread",
       "kind": "spread",
-      "value": 268.30000000000007,
+      "value": 274.3,
       "date": "2026-07-31",
       "source": "Derived",
       "decimals": 0,
@@ -533,8 +539,8 @@
     "copper_gold": {
       "label": "Copper / Gold",
       "kind": "ratio",
-      "value": 1.5201137718278017,
-      "date": "2026-08-11",
+      "value": 1.5143131843332414,
+      "date": "2026-08-12",
       "source": "Derived",
       "decimals": 2,
       "stale": false,
@@ -544,6 +550,16 @@
       "label": "UK 5Y funding proxy",
       "kind": "yield",
       "value": 7.200528018169837,
+      "date": "2026-08-10",
+      "source": "Derived: sovereign 5Y + US HY OAS (directional, not a lending quote)",
+      "decimals": 2,
+      "stale": false,
+      "feed_status": "derived"
+    },
+    "eu_funding_proxy": {
+      "label": "Euro 5Y funding proxy",
+      "kind": "yield",
+      "value": 5.630000000000001,
       "date": "2026-08-10",
       "source": "Derived: sovereign 5Y + US HY OAS (directional, not a lending quote)",
       "decimals": 2,
@@ -621,7 +637,7 @@
         },
         {
           "label": "Germany 5Y",
-          "value": "—"
+          "value": "+3 bp"
         },
         {
           "label": "HY OAS",
@@ -695,18 +711,15 @@
     },
     {
       "name": "Bundesbank Germany 2Y",
-      "status": "error",
-      "message": "Bundesbank returned no observations"
+      "status": "ok"
     },
     {
       "name": "Bundesbank Germany 5Y",
-      "status": "error",
-      "message": "Bundesbank returned no observations"
+      "status": "ok"
     },
     {
       "name": "Bundesbank Germany 10Y",
-      "status": "error",
-      "message": "Bundesbank returned no observations"
+      "status": "ok"
     },
     {
       "name": "Japan MOF JGB curve",
@@ -738,8 +751,8 @@
     },
     {
       "name": "Twelve Data XAG/USD",
-      "status": "error",
-      "message": "404 Client Error: Not Found for url: https://api.twelvedata.com/time_series?symbol=XAG%2FUSD&interval=1day&outputsize=8&apikey=82442488e64d4b3ca14f0135e26ec5c1&format=JSON"
+      "status": "fallback",
+      "message": "404 Client Error: Not Found for url: https://api.twelvedata.com/time_series?symbol=XAG%2FUSD&interval=1day&outputsize=8&apikey=[redacted]&format=JSON"
     },
     {
       "name": "COMEX silver futures fallback via Yahoo Finance",
@@ -747,8 +760,8 @@
     },
     {
       "name": "Twelve Data XPT/USD",
-      "status": "error",
-      "message": "404 Client Error: Not Found for url: https://api.twelvedata.com/time_series?symbol=XPT%2FUSD&interval=1day&outputsize=8&apikey=82442488e64d4b3ca14f0135e26ec5c1&format=JSON"
+      "status": "fallback",
+      "message": "404 Client Error: Not Found for url: https://api.twelvedata.com/time_series?symbol=XPT%2FUSD&interval=1day&outputsize=8&apikey=[redacted]&format=JSON"
     },
     {
       "name": "NYMEX platinum futures fallback via Yahoo Finance",
