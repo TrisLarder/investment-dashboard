@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20 07:56 UTC",
-  "build": "6bc1cd5",
+  "generated_at": "2026-08-20 13:09 UTC",
+  "build": "fb55446",
   "market_status": "0 feed issues · 3 stale",
   "headline": [
     "uk10",
@@ -20,13 +20,13 @@
     "uk2": {
       "label": "UK Gilt 2Y",
       "kind": "yield",
-      "value": 4.28822094506303,
-      "date": "2026-08-18",
+      "value": 4.276193903417443,
+      "date": "2026-08-19",
       "source": "Bank of England fitted nominal gilt spot curve",
       "prefix": "",
       "decimals": 2,
-      "change_1d": 1.7508686442087473,
-      "change_5d": 8.082567863537182,
+      "change_1d": -1.202704164558721,
+      "change_5d": 5.466381676030174,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -34,13 +34,13 @@
     "uk5": {
       "label": "UK Gilt 5Y",
       "kind": "yield",
-      "value": 4.579940560536768,
-      "date": "2026-08-18",
+      "value": 4.558750419708541,
+      "date": "2026-08-19",
       "source": "Bank of England fitted nominal gilt spot curve",
       "prefix": "",
       "decimals": 2,
-      "change_1d": 2.3684502741077473,
-      "change_5d": 10.682390692672872,
+      "change_1d": -2.119014082822712,
+      "change_5d": 7.257950296161475,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -48,13 +48,13 @@
     "uk10": {
       "label": "UK Gilt 10Y",
       "kind": "yield",
-      "value": 5.151350056203219,
-      "date": "2026-08-18",
+      "value": 5.123668174269356,
+      "date": "2026-08-19",
       "source": "Bank of England fitted nominal gilt spot curve",
       "prefix": "",
       "decimals": 2,
-      "change_1d": 2.4238982532122755,
-      "change_5d": 12.399863599742833,
+      "change_1d": -2.7681881933863117,
+      "change_5d": 7.989598579251744,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -62,22 +62,8 @@
     "de2": {
       "label": "Germany 2Y",
       "kind": "yield",
-      "value": 2.85,
-      "date": "2026-08-19",
-      "source": "Deutsche Bundesbank current Federal securities",
-      "prefix": "",
-      "decimals": 2,
-      "change_1d": 2.0000000000000018,
-      "change_5d": 6.000000000000005,
-      "change_unit": " bp",
-      "stale": false,
-      "feed_status": "ok"
-    },
-    "de5": {
-      "label": "Germany 5Y",
-      "kind": "yield",
-      "value": 2.98,
-      "date": "2026-08-19",
+      "value": 2.86,
+      "date": "2026-08-20",
       "source": "Deutsche Bundesbank current Federal securities",
       "prefix": "",
       "decimals": 2,
@@ -87,16 +73,30 @@
       "stale": false,
       "feed_status": "ok"
     },
+    "de5": {
+      "label": "Germany 5Y",
+      "kind": "yield",
+      "value": 2.99,
+      "date": "2026-08-20",
+      "source": "Deutsche Bundesbank current Federal securities",
+      "prefix": "",
+      "decimals": 2,
+      "change_1d": 1.000000000000023,
+      "change_5d": 10.000000000000009,
+      "change_unit": " bp",
+      "stale": false,
+      "feed_status": "ok"
+    },
     "de10": {
       "label": "Germany 10Y",
       "kind": "yield",
       "value": 3.26,
-      "date": "2026-08-19",
+      "date": "2026-08-20",
       "source": "Deutsche Bundesbank current Federal securities",
       "prefix": "",
       "decimals": 2,
-      "change_1d": 0.9999999999999787,
-      "change_5d": 9.999999999999964,
+      "change_1d": 0.0,
+      "change_5d": 10.999999999999988,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -202,13 +202,13 @@
     "gold": {
       "label": "Gold spot",
       "kind": "price",
-      "value": 4490.77056,
+      "value": 4476.94493,
       "date": "2026-08-20",
       "source": "Twelve Data",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -0.7179498045296051,
-      "change_5d": 2.632411076299168,
+      "change_1d": -1.0236071239817068,
+      "change_5d": 2.3164390793800393,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -216,13 +216,13 @@
     "silver": {
       "label": "Silver spot (futures proxy)",
       "kind": "price",
-      "value": 66.7699966430664,
+      "value": 66.6050033569336,
       "date": "2026-08-20",
       "source": "COMEX silver futures fallback via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 1.5760420256208052,
-      "change_5d": 2.9241680087366495,
+      "change_1d": 1.325040590713411,
+      "change_5d": 2.669835261155029,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -231,13 +231,13 @@
     "platinum": {
       "label": "Platinum spot (futures proxy)",
       "kind": "price",
-      "value": 1809.0,
+      "value": 1817.4000244140625,
       "date": "2026-08-20",
       "source": "NYMEX platinum futures fallback via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 0.3550440752658979,
-      "change_5d": 4.857410804539053,
+      "change_1d": 0.8210390008084989,
+      "change_5d": 5.344312303020815,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -302,7 +302,7 @@
     "gold_silver": {
       "label": "Gold / Silver ratio",
       "kind": "ratio",
-      "value": 67.25731295160001,
+      "value": 67.21634568514662,
       "date": "2026-08-20",
       "source": "Derived",
       "decimals": 1,
@@ -406,13 +406,13 @@
     "copper": {
       "label": "Copper (COMEX)",
       "kind": "price",
-      "value": 6.460000038146973,
+      "value": 6.421500205993652,
       "date": "2026-08-20",
       "source": "COMEX copper futures via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -0.42389443975916485,
-      "change_5d": -2.009862228965009,
+      "change_1d": -1.017340775349329,
+      "change_5d": -2.593856630604008,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -486,13 +486,13 @@
     "sonia": {
       "label": "SONIA",
       "kind": "yield",
-      "value": 3.7312,
-      "date": "2026-08-17",
+      "value": 3.7311,
+      "date": "2026-08-18",
       "source": "Bank of England",
       "prefix": "",
       "decimals": 2,
-      "change_1d": 0.04999999999997229,
-      "change_5d": -0.0300000000000189,
+      "change_1d": -0.009999999999976694,
+      "change_5d": -0.039999999999995595,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -539,7 +539,7 @@
     "copper_gold": {
       "label": "Copper / Gold",
       "kind": "ratio",
-      "value": 1.438505920495518,
+      "value": 1.4343487146699507,
       "date": "2026-08-20",
       "source": "Derived",
       "decimals": 2,
@@ -549,7 +549,7 @@
     "uk_funding_proxy": {
       "label": "UK 5Y funding proxy",
       "kind": "yield",
-      "value": 7.329940560536768,
+      "value": 7.308750419708541,
       "date": "2026-08-18",
       "source": "Derived: sovereign 5Y + US HY OAS (directional, not a lending quote)",
       "decimals": 2,
@@ -559,7 +559,7 @@
     "eu_funding_proxy": {
       "label": "Euro 5Y funding proxy",
       "kind": "yield",
-      "value": 5.73,
+      "value": 5.74,
       "date": "2026-08-18",
       "source": "Derived: sovereign 5Y + US HY OAS (directional, not a lending quote)",
       "decimals": 2,
@@ -633,11 +633,11 @@
       "drivers": [
         {
           "label": "UK 5Y",
-          "value": "+11 bp"
+          "value": "+7 bp"
         },
         {
           "label": "Germany 5Y",
-          "value": "+9 bp"
+          "value": "+10 bp"
         },
         {
           "label": "HY OAS",
