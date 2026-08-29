@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-28 22:15 UTC",
-  "build": "5782a72",
+  "generated_at": "2026-08-29 00:58 UTC",
+  "build": "e440138",
   "market_status": "0 feed issues · 3 stale",
   "headline": [
     "uk10",
@@ -202,13 +202,13 @@
     "gold": {
       "label": "Gold spot",
       "kind": "price",
-      "value": 4458.73332,
+      "value": 4458.87073,
       "date": "2026-08-29",
       "source": "Twelve Data",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 0.05144711218312281,
-      "change_5d": -4.157957717318461,
+      "change_1d": 0.054530514656625506,
+      "change_5d": -4.155004040997223,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -302,7 +302,7 @@
     "gold_silver": {
       "label": "Gold / Silver ratio",
       "kind": "ratio",
-      "value": 66.4589888713681,
+      "value": 66.4610370157637,
       "date": "2026-08-28",
       "source": "Derived",
       "decimals": 1,
@@ -515,7 +515,7 @@
       "label": "ECB deposit facility",
       "kind": "yield",
       "value": 2.25,
-      "date": "2026-08-28",
+      "date": "2026-08-29",
       "source": "European Central Bank",
       "prefix": "",
       "decimals": 2,
@@ -539,7 +539,7 @@
     "copper_gold": {
       "label": "Copper / Gold",
       "kind": "ratio",
-      "value": 1.489212157341044,
+      "value": 1.4891662639624443,
       "date": "2026-08-28",
       "source": "Derived",
       "decimals": 2,
