@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-01 16:35 UTC",
-  "build": "0376678",
-  "market_status": "0 feed issues · 3 stale",
+  "generated_at": "2026-09-01 19:56 UTC",
+  "build": "ca84bc8",
+  "market_status": "3 feed issues · 6 stale",
   "headline": [
     "uk10",
     "de10",
@@ -70,8 +70,9 @@
       "change_1d": 5.000000000000027,
       "change_5d": 11.000000000000032,
       "change_unit": " bp",
-      "stale": false,
-      "feed_status": "ok"
+      "stale": true,
+      "feed_status": "stale",
+      "feed_error": "400 Client Error: Bad Request for url: https://api.statistiken.bundesbank.de/.enodia/challenge?redirect=%2Frest%2Fdata%2FBBSSY%2FD.REN.EUR.A610.000000WT0202.A%3FlastNObservations%3D12"
     },
     "de5": {
       "label": "Germany 5Y",
@@ -84,8 +85,9 @@
       "change_1d": 4.0000000000000036,
       "change_5d": 10.999999999999988,
       "change_unit": " bp",
-      "stale": false,
-      "feed_status": "ok"
+      "stale": true,
+      "feed_status": "stale",
+      "feed_error": "400 Client Error: Bad Request for url: https://api.statistiken.bundesbank.de/.enodia/challenge?redirect=%2Frest%2Fdata%2FBBSSY%2FD.REN.EUR.A620.000000WT0505.A%3FlastNObservations%3D12"
     },
     "de10": {
       "label": "Germany 10Y",
@@ -98,8 +100,9 @@
       "change_1d": 4.999999999999982,
       "change_5d": 11.999999999999966,
       "change_unit": " bp",
-      "stale": false,
-      "feed_status": "ok"
+      "stale": true,
+      "feed_status": "stale",
+      "feed_error": "400 Client Error: Bad Request for url: https://api.statistiken.bundesbank.de/.enodia/challenge?redirect=%2Frest%2Fdata%2FBBSSY%2FD.REN.EUR.A630.000000WT1010.A%3FlastNObservations%3D12"
     },
     "us2": {
       "label": "US Treasury 2Y",
@@ -202,13 +205,13 @@
     "gold": {
       "label": "Gold spot",
       "kind": "price",
-      "value": 4350.01685,
+      "value": 4328.21314,
       "date": "2026-09-01",
       "source": "Twelve Data",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -2.220472532414275,
-      "change_5d": -5.465555128449862,
+      "change_1d": -2.7105755674956877,
+      "change_5d": -5.939392746111105,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -216,13 +219,13 @@
     "silver": {
       "label": "Silver spot (futures proxy)",
       "kind": "price",
-      "value": 65.58000183105469,
+      "value": 64.67500305175781,
       "date": "2026-09-01",
       "source": "COMEX silver futures fallback via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -0.9679691243460797,
-      "change_5d": -4.452473461743756,
+      "change_1d": -2.3346032285146534,
+      "change_5d": -5.771021684793832,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -231,13 +234,13 @@
     "platinum": {
       "label": "Platinum spot (futures proxy)",
       "kind": "price",
-      "value": 1773.0,
+      "value": 1748.199951171875,
       "date": "2026-09-01",
       "source": "NYMEX platinum futures fallback via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -0.8611062516121426,
-      "change_5d": -4.2966628864799405,
+      "change_1d": -2.2478233445203832,
+      "change_5d": -5.635324721465739,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -302,7 +305,7 @@
     "gold_silver": {
       "label": "Gold / Silver ratio",
       "kind": "ratio",
-      "value": 66.33145362219398,
+      "value": 66.92250383871242,
       "date": "2026-09-01",
       "source": "Derived",
       "decimals": 1,
@@ -406,13 +409,13 @@
     "copper": {
       "label": "Copper (COMEX)",
       "kind": "price",
-      "value": 6.604499816894531,
+      "value": 6.524499893188477,
       "date": "2026-09-01",
       "source": "COMEX copper futures via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 0.16682610656448826,
-      "change_5d": -1.5649455494522346,
+      "change_1d": -1.0464888557441654,
+      "change_5d": -2.757283662007126,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -421,13 +424,13 @@
     "uranium": {
       "label": "Uranium equities proxy (URA)",
       "kind": "price",
-      "value": 44.08000183105469,
+      "value": 44.029998779296875,
       "date": "2026-09-01",
       "source": "Global X Uranium ETF via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -3.1421589611483447,
-      "change_5d": -3.523740083268778,
+      "change_1d": -3.2520316344113342,
+      "change_5d": -3.633179902180439,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -539,7 +542,7 @@
     "copper_gold": {
       "label": "Copper / Gold",
       "kind": "ratio",
-      "value": 1.5182699388611636,
+      "value": 1.5074349811683434,
       "date": "2026-09-01",
       "source": "Derived",
       "decimals": 2,
@@ -711,15 +714,18 @@
     },
     {
       "name": "Bundesbank Germany 2Y",
-      "status": "ok"
+      "status": "error",
+      "message": "400 Client Error: Bad Request for url: https://api.statistiken.bundesbank.de/.enodia/challenge?redirect=%2Frest%2Fdata%2FBBSSY%2FD.REN.EUR.A610.000000WT0202.A%3FlastNObservations%3D12"
     },
     {
       "name": "Bundesbank Germany 5Y",
-      "status": "ok"
+      "status": "error",
+      "message": "400 Client Error: Bad Request for url: https://api.statistiken.bundesbank.de/.enodia/challenge?redirect=%2Frest%2Fdata%2FBBSSY%2FD.REN.EUR.A620.000000WT0505.A%3FlastNObservations%3D12"
     },
     {
       "name": "Bundesbank Germany 10Y",
-      "status": "ok"
+      "status": "error",
+      "message": "400 Client Error: Bad Request for url: https://api.statistiken.bundesbank.de/.enodia/challenge?redirect=%2Frest%2Fdata%2FBBSSY%2FD.REN.EUR.A630.000000WT1010.A%3FlastNObservations%3D12"
     },
     {
       "name": "Japan MOF JGB curve",
