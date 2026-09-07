@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-07 17:44 UTC",
-  "build": "03195fd",
-  "market_status": "1 feed issue · 1 stale",
+  "generated_at": "2026-09-07 20:36 UTC",
+  "build": "0a28559",
+  "market_status": "2 feed issues · 3 stale",
   "headline": [
     "uk10",
     "de10",
@@ -154,8 +154,9 @@
       "change_1d": 0.004656902694000209,
       "change_5d": -0.06282642042580999,
       "change_unit": "%",
-      "stale": false,
-      "feed_status": "ok"
+      "stale": true,
+      "feed_status": "stale",
+      "feed_error": "Required ECB leg unavailable"
     },
     "gbpcad": {
       "label": "GBP / CAD",
@@ -182,8 +183,9 @@
       "change_1d": -0.9582025441929765,
       "change_5d": -3.1164825576550093,
       "change_unit": "%",
-      "stale": false,
-      "feed_status": "ok"
+      "stale": true,
+      "feed_status": "stale",
+      "feed_error": "Required ECB leg unavailable"
     },
     "audjpy": {
       "label": "AUD / JPY",
@@ -203,13 +205,13 @@
     "gold": {
       "label": "Gold spot",
       "kind": "price",
-      "value": 4410.87918,
+      "value": 4405.22269,
       "date": "2026-09-07",
       "source": "Twelve Data",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -0.40941049421672204,
-      "change_5d": 0.5267809141485724,
+      "change_1d": -0.5371249816567558,
+      "change_5d": 0.39786585940135843,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -303,7 +305,7 @@
     "gold_silver": {
       "label": "Gold / Silver ratio",
       "kind": "ratio",
-      "value": 66.08256588061852,
+      "value": 65.99782191964744,
       "date": "2026-09-07",
       "source": "Derived",
       "decimals": 1,
@@ -540,7 +542,7 @@
     "copper_gold": {
       "label": "Copper / Gold",
       "kind": "ratio",
-      "value": 1.5150040644638745,
+      "value": 1.5169493929849625,
       "date": "2026-09-07",
       "source": "Derived",
       "decimals": 2,
@@ -728,7 +730,8 @@
     },
     {
       "name": "ECB FX USD",
-      "status": "ok"
+      "status": "error",
+      "message": "504 Server Error: Gateway Time-out for url: https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?format=csvdata&lastNObservations=260"
     },
     {
       "name": "ECB FX GBP",
@@ -745,7 +748,7 @@
     {
       "name": "ECB FX AUD",
       "status": "error",
-      "message": "500 Server Error: Internal Server Error for url: https://data-api.ecb.europa.eu/service/data/EXR/D.AUD.EUR.SP00.A?format=csvdata&lastNObservations=260"
+      "message": "504 Server Error: Gateway Time-out for url: https://data-api.ecb.europa.eu/service/data/EXR/D.AUD.EUR.SP00.A?format=csvdata&lastNObservations=260"
     },
     {
       "name": "Twelve Data XAU/USD",
