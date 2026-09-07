@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-07 13:31 UTC",
-  "build": "e1ebd29",
-  "market_status": "All feeds current",
+  "generated_at": "2026-09-07 17:44 UTC",
+  "build": "03195fd",
+  "market_status": "1 feed issue · 1 stale",
   "headline": [
     "uk10",
     "de10",
@@ -146,13 +146,13 @@
     "gbpusd": {
       "label": "GBP / USD",
       "kind": "fx",
-      "value": 1.3530000698502875,
-      "date": "2026-09-04",
+      "value": 1.3530630777469903,
+      "date": "2026-09-07",
       "source": "ECB reference rates",
       "prefix": "",
       "decimals": 4,
-      "change_1d": 0.24315196811579565,
-      "change_5d": -0.387214646082068,
+      "change_1d": 0.004656902694000209,
+      "change_5d": -0.06282642042580999,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -160,13 +160,13 @@
     "gbpcad": {
       "label": "GBP / CAD",
       "kind": "fx",
-      "value": 1.8670981862208667,
-      "date": "2026-09-04",
+      "value": 1.8699792767830117,
+      "date": "2026-09-07",
       "source": "ECB reference rates",
       "prefix": "",
       "decimals": 4,
-      "change_1d": 0.3016008585034369,
-      "change_5d": -0.7764063714490455,
+      "change_1d": 0.15430846558619482,
+      "change_5d": -0.534104398266444,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -174,13 +174,13 @@
     "usdjpy": {
       "label": "USD / JPY",
       "kind": "fx",
-      "value": 156.24677336086734,
-      "date": "2026-09-04",
+      "value": 154.74961280330407,
+      "date": "2026-09-07",
       "source": "ECB reference rates",
       "prefix": "",
       "decimals": 2,
-      "change_1d": 0.14934454977506562,
-      "change_5d": -2.152475137662524,
+      "change_1d": -0.9582025441929765,
+      "change_5d": -3.1164825576550093,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -196,19 +196,20 @@
       "change_1d": 0.2904456015263346,
       "change_5d": -2.032325431460724,
       "change_unit": "%",
-      "stale": false,
-      "feed_status": "ok"
+      "stale": true,
+      "feed_status": "stale",
+      "feed_error": "Required ECB leg unavailable"
     },
     "gold": {
       "label": "Gold spot",
       "kind": "price",
-      "value": 4403.83668,
+      "value": 4410.87918,
       "date": "2026-09-07",
       "source": "Twelve Data",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -0.5684188682784308,
-      "change_5d": 0.36627779771820634,
+      "change_1d": -0.40941049421672204,
+      "change_5d": 0.5267809141485724,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -302,7 +303,7 @@
     "gold_silver": {
       "label": "Gold / Silver ratio",
       "kind": "ratio",
-      "value": 65.97705710306587,
+      "value": 66.08256588061852,
       "date": "2026-09-07",
       "source": "Derived",
       "decimals": 1,
@@ -382,8 +383,8 @@
     "carry_usdjpy_200d": {
       "label": "USD/JPY vs 200D",
       "kind": "ratio",
-      "value": -1.370039562059966,
-      "date": "2026-09-04",
+      "value": -2.308989288636387,
+      "date": "2026-09-07",
       "source": "Derived from ECB reference rates",
       "decimals": 2,
       "stale": false,
@@ -539,7 +540,7 @@
     "copper_gold": {
       "label": "Copper / Gold",
       "kind": "ratio",
-      "value": 1.5174268191887357,
+      "value": 1.5150040644638745,
       "date": "2026-09-07",
       "source": "Derived",
       "decimals": 2,
@@ -659,7 +660,7 @@
       "drivers": [
         {
           "label": "USD/JPY vs 200D",
-          "value": "-1.37%"
+          "value": "-2.31%"
         },
         {
           "label": "AUD/JPY vs 200D",
@@ -743,7 +744,8 @@
     },
     {
       "name": "ECB FX AUD",
-      "status": "ok"
+      "status": "error",
+      "message": "500 Server Error: Internal Server Error for url: https://data-api.ecb.europa.eu/service/data/EXR/D.AUD.EUR.SP00.A?format=csvdata&lastNObservations=260"
     },
     {
       "name": "Twelve Data XAU/USD",
