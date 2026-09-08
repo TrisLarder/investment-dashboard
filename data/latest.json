@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-07 20:36 UTC",
-  "build": "0a28559",
-  "market_status": "2 feed issues · 3 stale",
+  "generated_at": "2026-09-08 12:09 UTC",
+  "build": "d7737a4",
+  "market_status": "2 feed issues · 2 stale",
   "headline": [
     "uk10",
     "de10",
@@ -20,12 +20,12 @@
     "uk2": {
       "label": "UK Gilt 2Y",
       "kind": "yield",
-      "value": 4.340146761000464,
-      "date": "2026-09-04",
+      "value": 4.373303410544552,
+      "date": "2026-09-07",
       "source": "Bank of England fitted nominal gilt spot curve",
       "prefix": "",
       "decimals": 2,
-      "change_1d": 0.3134852360076046,
+      "change_1d": 3.3156649544087813,
       "change_5d": null,
       "change_unit": " bp",
       "stale": false,
@@ -34,12 +34,12 @@
     "uk5": {
       "label": "UK Gilt 5Y",
       "kind": "yield",
-      "value": 4.616905128553932,
-      "date": "2026-09-04",
+      "value": 4.649566910186248,
+      "date": "2026-09-07",
       "source": "Bank of England fitted nominal gilt spot curve",
       "prefix": "",
       "decimals": 2,
-      "change_1d": -0.16210461982382185,
+      "change_1d": 3.2661781632316256,
       "change_5d": null,
       "change_unit": " bp",
       "stale": false,
@@ -48,12 +48,12 @@
     "uk10": {
       "label": "UK Gilt 10Y",
       "kind": "yield",
-      "value": 5.142513055382191,
-      "date": "2026-09-04",
+      "value": 5.1774569382530355,
+      "date": "2026-09-07",
       "source": "Bank of England fitted nominal gilt spot curve",
       "prefix": "",
       "decimals": 2,
-      "change_1d": -1.4995346132645082,
+      "change_1d": 3.4943882870844156,
       "change_5d": null,
       "change_unit": " bp",
       "stale": false,
@@ -62,13 +62,13 @@
     "de2": {
       "label": "Germany 2Y",
       "kind": "yield",
-      "value": 0.0,
-      "date": "2026-09-07",
+      "value": 3.01,
+      "date": "2026-09-08",
       "source": "Deutsche Bundesbank current Federal securities",
       "prefix": "",
       "decimals": 2,
-      "change_1d": -296.0,
-      "change_5d": -292.0,
+      "change_1d": 4.999999999999982,
+      "change_5d": 3.999999999999959,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -76,13 +76,13 @@
     "de5": {
       "label": "Germany 5Y",
       "kind": "yield",
-      "value": 0.0,
-      "date": "2026-09-07",
+      "value": 3.14,
+      "date": "2026-09-08",
       "source": "Deutsche Bundesbank current Federal securities",
       "prefix": "",
       "decimals": 2,
-      "change_1d": -309.0,
-      "change_5d": -305.0,
+      "change_1d": 5.000000000000027,
+      "change_5d": 5.000000000000027,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -90,13 +90,13 @@
     "de10": {
       "label": "Germany 10Y",
       "kind": "yield",
-      "value": 0.0,
-      "date": "2026-09-07",
+      "value": 3.39,
+      "date": "2026-09-08",
       "source": "Deutsche Bundesbank current Federal securities",
       "prefix": "",
       "decimals": 2,
-      "change_1d": -334.0,
-      "change_5d": -331.0,
+      "change_1d": 4.0000000000000036,
+      "change_5d": 3.000000000000025,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -154,9 +154,8 @@
       "change_1d": 0.004656902694000209,
       "change_5d": -0.06282642042580999,
       "change_unit": "%",
-      "stale": true,
-      "feed_status": "stale",
-      "feed_error": "Required ECB leg unavailable"
+      "stale": false,
+      "feed_status": "ok"
     },
     "gbpcad": {
       "label": "GBP / CAD",
@@ -169,8 +168,9 @@
       "change_1d": 0.15430846558619482,
       "change_5d": -0.534104398266444,
       "change_unit": "%",
-      "stale": false,
-      "feed_status": "ok"
+      "stale": true,
+      "feed_status": "stale",
+      "feed_error": "Required ECB leg unavailable"
     },
     "usdjpy": {
       "label": "USD / JPY",
@@ -183,9 +183,8 @@
       "change_1d": -0.9582025441929765,
       "change_5d": -3.1164825576550093,
       "change_unit": "%",
-      "stale": true,
-      "feed_status": "stale",
-      "feed_error": "Required ECB leg unavailable"
+      "stale": false,
+      "feed_status": "ok"
     },
     "audjpy": {
       "label": "AUD / JPY",
@@ -205,13 +204,13 @@
     "gold": {
       "label": "Gold spot",
       "kind": "price",
-      "value": 4405.22269,
-      "date": "2026-09-07",
+      "value": 4403.61614,
+      "date": "2026-09-08",
       "source": "Twelve Data",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -0.5371249816567558,
-      "change_5d": 0.39786585940135843,
+      "change_1d": -0.03559896428760867,
+      "change_5d": -1.5684769665302079,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -219,13 +218,13 @@
     "silver": {
       "label": "Silver spot (futures proxy)",
       "kind": "price",
-      "value": 66.74800109863281,
-      "date": "2026-09-07",
+      "value": 66.86499786376953,
+      "date": "2026-09-08",
       "source": "COMEX silver futures fallback via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 1.0613715375644261,
-      "change_5d": 0.7958206941952817,
+      "change_1d": 1.2385132250391395,
+      "change_5d": 0.9724969206952538,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -234,13 +233,13 @@
     "platinum": {
       "label": "Platinum spot (futures proxy)",
       "kind": "price",
-      "value": 1826.0,
-      "date": "2026-09-07",
+      "value": 1841.5,
+      "date": "2026-09-08",
       "source": "NYMEX platinum futures fallback via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 0.27457440966502933,
-      "change_5d": 2.102436539512831,
+      "change_1d": 1.125755079626578,
+      "change_5d": 2.969133016162573,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -305,8 +304,8 @@
     "gold_silver": {
       "label": "Gold / Silver ratio",
       "kind": "ratio",
-      "value": 65.99782191964744,
-      "date": "2026-09-07",
+      "value": 65.85831572105796,
+      "date": "2026-09-08",
       "source": "Derived",
       "decimals": 1,
       "stale": false,
@@ -409,13 +408,13 @@
     "copper": {
       "label": "Copper (COMEX)",
       "kind": "price",
-      "value": 6.682499885559082,
-      "date": "2026-09-07",
+      "value": 6.827499866485596,
+      "date": "2026-09-08",
       "source": "COMEX copper futures via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 1.2960400470924505,
-      "change_5d": 1.3498103643936998,
+      "change_1d": 3.494008490982803,
+      "change_5d": 3.54894554156,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -489,13 +488,13 @@
     "sonia": {
       "label": "SONIA",
       "kind": "yield",
-      "value": 3.7301,
-      "date": "2026-09-03",
+      "value": 3.7303,
+      "date": "2026-09-04",
       "source": "Bank of England",
       "prefix": "",
       "decimals": 2,
-      "change_1d": 0.0300000000000189,
-      "change_5d": -0.07999999999999119,
+      "change_1d": 0.019999999999997797,
+      "change_5d": 0.0,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -503,13 +502,13 @@
     "estr": {
       "label": "€STR",
       "kind": "yield",
-      "value": 2.189,
-      "date": "2026-09-04",
+      "value": 2.188,
+      "date": "2026-09-07",
       "source": "European Central Bank",
       "prefix": "",
       "decimals": 2,
-      "change_1d": 0.0,
-      "change_5d": -0.09999999999998899,
+      "change_1d": -0.09999999999998899,
+      "change_5d": 0.30000000000001137,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -518,7 +517,7 @@
       "label": "ECB deposit facility",
       "kind": "yield",
       "value": 2.25,
-      "date": "2026-09-07",
+      "date": "2026-09-08",
       "source": "European Central Bank",
       "prefix": "",
       "decimals": 2,
@@ -542,8 +541,8 @@
     "copper_gold": {
       "label": "Copper / Gold",
       "kind": "ratio",
-      "value": 1.5169493929849625,
-      "date": "2026-09-07",
+      "value": 1.5504302939732606,
+      "date": "2026-09-08",
       "source": "Derived",
       "decimals": 2,
       "stale": false,
@@ -552,7 +551,7 @@
     "uk_funding_proxy": {
       "label": "UK 5Y funding proxy",
       "kind": "yield",
-      "value": 7.2669051285539314,
+      "value": 7.299566910186249,
       "date": "2026-09-03",
       "source": "Derived: sovereign 5Y + US HY OAS (directional, not a lending quote)",
       "decimals": 2,
@@ -562,7 +561,7 @@
     "eu_funding_proxy": {
       "label": "Euro 5Y funding proxy",
       "kind": "yield",
-      "value": 2.65,
+      "value": 5.79,
       "date": "2026-09-03",
       "source": "Derived: sovereign 5Y + US HY OAS (directional, not a lending quote)",
       "decimals": 2,
@@ -631,7 +630,7 @@
   },
   "signals": {
     "real_estate": {
-      "status": "NEUTRAL",
+      "status": "TIGHTENING",
       "summary": "Directional funding pulse from medium-term sovereign yields, overnight benchmarks and credit spreads; derived proxies are not executable loan quotes.",
       "drivers": [
         {
@@ -640,7 +639,7 @@
         },
         {
           "label": "Germany 5Y",
-          "value": "-305 bp"
+          "value": "+5 bp"
         },
         {
           "label": "HY OAS",
@@ -730,8 +729,7 @@
     },
     {
       "name": "ECB FX USD",
-      "status": "error",
-      "message": "504 Server Error: Gateway Time-out for url: https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?format=csvdata&lastNObservations=260"
+      "status": "ok"
     },
     {
       "name": "ECB FX GBP",
@@ -739,7 +737,8 @@
     },
     {
       "name": "ECB FX CAD",
-      "status": "ok"
+      "status": "error",
+      "message": "504 Server Error: Gateway Time-out for url: https://data-api.ecb.europa.eu/service/data/EXR/D.CAD.EUR.SP00.A?format=csvdata&lastNObservations=260"
     },
     {
       "name": "ECB FX JPY",
