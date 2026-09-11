@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-11 16:25 UTC",
-  "build": "82dacfd",
+  "generated_at": "2026-09-11 19:44 UTC",
+  "build": "6766c19",
   "market_status": "All feeds current",
   "headline": [
     "uk10",
@@ -202,13 +202,13 @@
     "gold": {
       "label": "Gold spot",
       "kind": "price",
-      "value": 4358.09066,
+      "value": 4347.87538,
       "date": "2026-09-11",
       "source": "Twelve Data",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 0.9574750918962982,
-      "change_5d": -1.6012907546816835,
+      "change_1d": 0.7208327279311977,
+      "change_5d": -1.8319354211190353,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -216,13 +216,13 @@
     "silver": {
       "label": "Silver spot (futures proxy)",
       "kind": "price",
-      "value": 64.91000366210938,
+      "value": 64.90499877929688,
       "date": "2026-09-11",
       "source": "COMEX silver futures fallback via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 0.9738148114037948,
-      "change_5d": -3.080339724672876,
+      "change_1d": 0.9660292301104434,
+      "change_5d": -3.0878127105693154,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -231,13 +231,13 @@
     "platinum": {
       "label": "Platinum spot (futures proxy)",
       "kind": "price",
-      "value": 1795.800048828125,
+      "value": 1798.9000244140625,
       "date": "2026-09-11",
       "source": "NYMEX platinum futures fallback via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -0.07233469342119436,
-      "change_5d": -1.7829782952658135,
+      "change_1d": 0.10016408950972444,
+      "change_5d": -1.613432487754074,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -302,7 +302,7 @@
     "gold_silver": {
       "label": "Gold / Silver ratio",
       "kind": "ratio",
-      "value": 67.14050861383629,
+      "value": 66.98829769313342,
       "date": "2026-09-11",
       "source": "Derived",
       "decimals": 1,
@@ -406,13 +406,13 @@
     "copper": {
       "label": "Copper (COMEX)",
       "kind": "price",
-      "value": 6.548500061035156,
+      "value": 6.546999931335449,
       "date": "2026-09-11",
       "source": "COMEX copper futures via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 1.2602451416361848,
-      "change_5d": -0.43332947387905163,
+      "change_1d": 1.2370484554148131,
+      "change_5d": -0.45613819620706764,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -421,13 +421,13 @@
     "uranium": {
       "label": "Uranium equities proxy (URA)",
       "kind": "price",
-      "value": 44.02000045776367,
+      "value": 43.724998474121094,
       "date": "2026-09-11",
       "source": "Global X Uranium ETF via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -2.177776760525174,
-      "change_5d": -3.676149402908069,
+      "change_1d": -2.8333367241753504,
+      "change_5d": -4.321667955900765,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -436,19 +436,19 @@
     "cftc_yen": {
       "label": "CFTC yen leveraged funds",
       "kind": "position",
-      "value": 69.0,
-      "date": "2026-09-01",
+      "value": -809.0,
+      "date": "2026-09-08",
       "source": "CFTC Traders in Financial Futures",
       "prefix": "",
       "decimals": 0,
-      "change_1d": -126.64092664092665,
-      "change_5d": -94.56264775413712,
+      "change_1d": -1272.463768115942,
+      "change_5d": -239.96539792387543,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
-      "long": 1547.0,
-      "short": 1478.0,
-      "pct_oi": 0.3078982597054886
+      "long": 33.0,
+      "short": 842.0,
+      "pct_oi": -3.4792706003784617
     },
     "vix_front": {
       "label": "VIX front future",
@@ -539,7 +539,7 @@
     "copper_gold": {
       "label": "Copper / Gold",
       "kind": "ratio",
-      "value": 1.502607580227612,
+      "value": 1.5057929124305878,
       "date": "2026-09-11",
       "source": "Derived",
       "decimals": 2,
@@ -671,7 +671,7 @@
         },
         {
           "label": "CFTC yen",
-          "value": "+0.3% OI"
+          "value": "-3.5% OI"
         }
       ]
     }
