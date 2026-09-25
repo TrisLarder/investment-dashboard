@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-25 12:46 UTC",
-  "build": "6863128",
+  "generated_at": "2026-09-25 17:06 UTC",
+  "build": "2d3f460",
   "market_status": "0 feed issues · 3 stale",
   "headline": [
     "uk10",
@@ -146,13 +146,13 @@
     "gbpusd": {
       "label": "GBP / USD",
       "kind": "fx",
-      "value": 1.3219593887377017,
-      "date": "2026-09-24",
+      "value": 1.3252367947004475,
+      "date": "2026-09-25",
       "source": "ECB reference rates",
       "prefix": "",
       "decimals": 4,
-      "change_1d": -0.42729869248491203,
-      "change_5d": -1.1725682994887743,
+      "change_1d": 0.24792032120406482,
+      "change_5d": -0.6881885437395874,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -160,13 +160,13 @@
     "gbpcad": {
       "label": "GBP / CAD",
       "kind": "fx",
-      "value": 1.8662340380992255,
-      "date": "2026-09-24",
+      "value": 1.874251844964844,
+      "date": "2026-09-25",
       "source": "ECB reference rates",
       "prefix": "",
       "decimals": 4,
-      "change_1d": -0.22839113352711715,
-      "change_5d": -0.31188231885952433,
+      "change_1d": 0.4296249399557972,
+      "change_5d": 0.24959419879224676,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -174,13 +174,13 @@
     "usdjpy": {
       "label": "USD / JPY",
       "kind": "fx",
-      "value": 158.8545790446028,
-      "date": "2026-09-24",
+      "value": 157.59010786635093,
+      "date": "2026-09-25",
       "source": "ECB reference rates",
       "prefix": "",
       "decimals": 2,
-      "change_1d": 0.5932076291877086,
-      "change_5d": 2.0312963362844494,
+      "change_1d": -0.7959929048672931,
+      "change_5d": -0.188867240611168,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -188,13 +188,13 @@
     "audjpy": {
       "label": "AUD / JPY",
       "kind": "fx",
-      "value": 111.62143784385239,
-      "date": "2026-09-24",
+      "value": 110.78914919852033,
+      "date": "2026-09-25",
       "source": "ECB reference rates",
       "prefix": "",
       "decimals": 2,
-      "change_1d": 0.013303852765855773,
-      "change_5d": 0.7808886915767088,
+      "change_1d": -0.7456351229737312,
+      "change_5d": -1.4506821957452898,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -202,13 +202,13 @@
     "gold": {
       "label": "Gold spot",
       "kind": "price",
-      "value": 4298.25439,
+      "value": 4291.57183,
       "date": "2026-09-25",
       "source": "Twelve Data",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 0.5372810195233724,
-      "change_5d": -1.8693279767537763,
+      "change_1d": 0.38097421408789245,
+      "change_5d": -2.0218931914049443,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -216,13 +216,13 @@
     "silver": {
       "label": "Silver spot (futures proxy)",
       "kind": "price",
-      "value": 65.22000122070312,
+      "value": 64.73999786376953,
       "date": "2026-09-25",
       "source": "COMEX silver futures fallback via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 2.7782600310961136,
-      "change_5d": -2.007329977848671,
+      "change_1d": 2.0218370180425715,
+      "change_5d": -2.7285322115982003,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -231,13 +231,13 @@
     "platinum": {
       "label": "Platinum spot (futures proxy)",
       "kind": "price",
-      "value": 1798.300048828125,
+      "value": 1800.0,
       "date": "2026-09-25",
       "source": "NYMEX platinum futures fallback via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 2.8128794196401463,
-      "change_5d": -0.2883255432145848,
+      "change_1d": 2.9100694714154995,
+      "change_5d": -0.19406709176601478,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -288,13 +288,13 @@
     "hy_oas": {
       "label": "US HY OAS",
       "kind": "spread",
-      "value": 2.73,
-      "date": "2026-09-23",
+      "value": 2.8,
+      "date": "2026-09-24",
       "source": "ICE BofA via FRED",
       "prefix": "",
       "decimals": 2,
-      "change_1d": 4.999999999999982,
-      "change_5d": 2.9999999999999805,
+      "change_1d": 6.999999999999984,
+      "change_5d": 9.999999999999964,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -302,7 +302,7 @@
     "gold_silver": {
       "label": "Gold / Silver ratio",
       "kind": "ratio",
-      "value": 65.90392992258306,
+      "value": 66.28934154478392,
       "date": "2026-09-25",
       "source": "Derived",
       "decimals": 1,
@@ -382,37 +382,37 @@
     "carry_usdjpy_200d": {
       "label": "USD/JPY vs 200D",
       "kind": "ratio",
-      "value": 0.2878270237564706,
-      "date": "2026-09-24",
+      "value": -0.5167596471836622,
+      "date": "2026-09-25",
       "source": "Derived from ECB reference rates",
       "decimals": 2,
       "stale": false,
       "feed_status": "derived",
       "suffix": "%",
-      "signal": "NORMAL"
+      "signal": "ARM"
     },
     "carry_audjpy_200d": {
       "label": "AUD/JPY vs 200D",
       "kind": "ratio",
-      "value": 0.47484781320028535,
-      "date": "2026-09-24",
+      "value": -0.3068304865515681,
+      "date": "2026-09-25",
       "source": "Derived from ECB reference rates",
       "decimals": 2,
       "stale": false,
       "feed_status": "derived",
       "suffix": "%",
-      "signal": "NORMAL"
+      "signal": "ARM"
     },
     "copper": {
       "label": "Copper (COMEX)",
       "kind": "price",
-      "value": 6.771999835968018,
+      "value": 6.767499923706055,
       "date": "2026-09-25",
       "source": "COMEX copper futures via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 0.7963041980406205,
-      "change_5d": 2.3733948644311997,
+      "change_1d": 0.7293262688900182,
+      "change_5d": 2.3053689775428765,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -421,13 +421,13 @@
     "uranium": {
       "label": "Uranium equities proxy (URA)",
       "kind": "price",
-      "value": 40.86000061035156,
-      "date": "2026-09-24",
+      "value": 41.029998779296875,
+      "date": "2026-09-25",
       "source": "Global X Uranium ETF via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -2.6911193687680135,
-      "change_5d": -4.264291663098952,
+      "change_1d": 0.4160503338373589,
+      "change_5d": -1.4886019780738668,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -539,7 +539,7 @@
     "copper_gold": {
       "label": "Copper / Gold",
       "kind": "ratio",
-      "value": 1.5755232756170157,
+      "value": 1.5769280328475954,
       "date": "2026-09-25",
       "source": "Derived",
       "decimals": 2,
@@ -549,8 +549,8 @@
     "uk_funding_proxy": {
       "label": "UK 5Y funding proxy",
       "kind": "yield",
-      "value": 7.667278845632241,
-      "date": "2026-09-23",
+      "value": 7.7372788456322406,
+      "date": "2026-09-24",
       "source": "Derived: sovereign 5Y + US HY OAS (directional, not a lending quote)",
       "decimals": 2,
       "stale": false,
@@ -559,8 +559,8 @@
     "eu_funding_proxy": {
       "label": "Euro 5Y funding proxy",
       "kind": "yield",
-      "value": 6.13,
-      "date": "2026-09-23",
+      "value": 6.199999999999999,
+      "date": "2026-09-24",
       "source": "Derived: sovereign 5Y + US HY OAS (directional, not a lending quote)",
       "decimals": 2,
       "stale": false,
@@ -641,7 +641,7 @@
         },
         {
           "label": "HY OAS",
-          "value": "+3 bp"
+          "value": "+10 bp"
         },
         {
           "label": "SONIA",
@@ -654,16 +654,16 @@
       ]
     },
     "carry": {
-      "status": "NORMAL",
+      "status": "ARM",
       "summary": "No high-specificity forced-deleveraging confirmation.",
       "drivers": [
         {
           "label": "USD/JPY vs 200D",
-          "value": "+0.29%"
+          "value": "-0.52%"
         },
         {
           "label": "AUD/JPY vs 200D",
-          "value": "+0.47%"
+          "value": "-0.31%"
         },
         {
           "label": "VIX curve",
