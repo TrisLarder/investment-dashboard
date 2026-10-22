@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-21 20:38 UTC",
-  "build": "14cb891",
-  "market_status": "7 feed issues · 10 stale",
+  "generated_at": "2026-10-22 12:58 UTC",
+  "build": "fb51a8b",
+  "market_status": "0 feed issues · 3 stale",
   "headline": [
     "uk10",
     "de10",
@@ -20,13 +20,13 @@
     "uk2": {
       "label": "UK Gilt 2Y",
       "kind": "yield",
-      "value": 4.720340987825105,
-      "date": "2026-10-20",
+      "value": 4.710779604987813,
+      "date": "2026-10-21",
       "source": "Bank of England fitted nominal gilt spot curve",
       "prefix": "",
       "decimals": 2,
-      "change_1d": 1.2419272743272813,
-      "change_5d": 0.20819927793862547,
+      "change_1d": -0.9561382837291355,
+      "change_5d": 1.1038000799137748,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -34,13 +34,13 @@
     "uk5": {
       "label": "UK Gilt 5Y",
       "kind": "yield",
-      "value": 4.9761070182191816,
-      "date": "2026-10-20",
+      "value": 4.969345439870542,
+      "date": "2026-10-21",
       "source": "Bank of England fitted nominal gilt spot curve",
       "prefix": "",
       "decimals": 2,
-      "change_1d": -0.20623365389322856,
-      "change_5d": -1.249421999555267,
+      "change_1d": -0.6761578348639219,
+      "change_5d": -0.9441783215974553,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -48,13 +48,13 @@
     "uk10": {
       "label": "UK Gilt 10Y",
       "kind": "yield",
-      "value": 5.384075208743951,
-      "date": "2026-10-20",
+      "value": 5.368221964263087,
+      "date": "2026-10-21",
       "source": "Bank of England fitted nominal gilt spot curve",
       "prefix": "",
       "decimals": 2,
-      "change_1d": -2.954627078509997,
-      "change_5d": -4.369633240360571,
+      "change_1d": -1.5853244480863893,
+      "change_5d": -5.165873360308737,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -62,13 +62,13 @@
     "de2": {
       "label": "Germany 2Y",
       "kind": "yield",
-      "value": 3.09,
-      "date": "2026-10-21",
+      "value": 3.12,
+      "date": "2026-10-22",
       "source": "Deutsche Bundesbank current Federal securities",
       "prefix": "",
       "decimals": 2,
-      "change_1d": 0.9999999999999787,
-      "change_5d": -4.0000000000000036,
+      "change_1d": 3.000000000000025,
+      "change_5d": 4.0000000000000036,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -76,13 +76,13 @@
     "de5": {
       "label": "Germany 5Y",
       "kind": "yield",
-      "value": 3.21,
-      "date": "2026-10-21",
+      "value": 3.22,
+      "date": "2026-10-22",
       "source": "Deutsche Bundesbank current Federal securities",
       "prefix": "",
       "decimals": 2,
-      "change_1d": 0.0,
-      "change_5d": -3.000000000000025,
+      "change_1d": 1.000000000000023,
+      "change_5d": 3.000000000000025,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -90,13 +90,13 @@
     "de10": {
       "label": "Germany 10Y",
       "kind": "yield",
-      "value": 3.41,
-      "date": "2026-10-21",
+      "value": 3.38,
+      "date": "2026-10-22",
       "source": "Deutsche Bundesbank current Federal securities",
       "prefix": "",
       "decimals": 2,
-      "change_1d": -0.9999999999999787,
-      "change_5d": -4.0000000000000036,
+      "change_1d": -3.000000000000025,
+      "change_5d": -1.000000000000023,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -104,47 +104,44 @@
     "us2": {
       "label": "US Treasury 2Y",
       "kind": "yield",
-      "value": 4.77,
-      "date": "2026-10-19",
+      "value": 4.79,
+      "date": "2026-10-20",
       "source": "FRED / U.S. Treasury",
       "prefix": "",
       "decimals": 2,
-      "change_1d": 2.999999999999936,
-      "change_5d": -3.000000000000025,
+      "change_1d": 2.000000000000046,
+      "change_5d": 0.0,
       "change_unit": " bp",
-      "stale": true,
-      "feed_status": "stale",
-      "feed_error": "Expecting value: line 1 column 1 (char 0)"
+      "stale": false,
+      "feed_status": "ok"
     },
     "us5": {
       "label": "US Treasury 5Y",
       "kind": "yield",
       "value": 4.94,
-      "date": "2026-10-19",
+      "date": "2026-10-20",
       "source": "FRED / U.S. Treasury",
       "prefix": "",
       "decimals": 2,
-      "change_1d": 5.000000000000071,
-      "change_5d": -7.999999999999918,
+      "change_1d": 0.0,
+      "change_5d": -5.999999999999961,
       "change_unit": " bp",
-      "stale": true,
-      "feed_status": "stale",
-      "feed_error": "Expecting value: line 1 column 1 (char 0)"
+      "stale": false,
+      "feed_status": "ok"
     },
     "us10": {
       "label": "US Treasury 10Y",
       "kind": "yield",
-      "value": 5.15,
-      "date": "2026-10-19",
+      "value": 5.12,
+      "date": "2026-10-20",
       "source": "FRED / U.S. Treasury",
       "prefix": "",
       "decimals": 2,
-      "change_1d": 6.00000000000005,
+      "change_1d": -3.000000000000025,
       "change_5d": -8.999999999999986,
       "change_unit": " bp",
-      "stale": true,
-      "feed_status": "stale",
-      "feed_error": "Expecting value: line 1 column 1 (char 0)"
+      "stale": false,
+      "feed_status": "ok"
     },
     "gbpusd": {
       "label": "GBP / USD",
@@ -205,13 +202,13 @@
     "gold": {
       "label": "Gold spot",
       "kind": "price",
-      "value": 4132.53076,
+      "value": 4083.6514,
       "date": "2026-10-22",
       "source": "Twelve Data",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -0.048647950287061814,
-      "change_5d": -0.7728521115885512,
+      "change_1d": -1.2308673705545115,
+      "change_5d": -1.9465056825085814,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -219,13 +216,13 @@
     "silver": {
       "label": "Silver spot (futures proxy)",
       "kind": "price",
-      "value": 57.970001220703125,
-      "date": "2026-10-21",
+      "value": 56.084999084472656,
+      "date": "2026-10-22",
       "source": "COMEX silver futures fallback via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 0.4574913061050845,
-      "change_5d": 4.356439274310664,
+      "change_1d": -2.328378983544166,
+      "change_5d": -1.3230865320861263,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -234,13 +231,13 @@
     "platinum": {
       "label": "Platinum spot (futures proxy)",
       "kind": "price",
-      "value": 1634.4000244140625,
-      "date": "2026-10-21",
+      "value": 1594.4000244140625,
+      "date": "2026-10-22",
       "source": "NYMEX platinum futures fallback via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -0.7409177306427206,
-      "change_5d": 2.0670689175436463,
+      "change_1d": -1.9132559573015961,
+      "change_5d": -1.0119778513653865,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -249,68 +246,64 @@
     "wti": {
       "label": "WTI Crude",
       "kind": "price",
-      "value": 101.91,
-      "date": "2026-10-14",
+      "value": 107.89,
+      "date": "2026-10-20",
       "source": "EIA via FRED",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 1.0410469958358037,
-      "change_5d": 7.251105030519889,
+      "change_1d": -1.9270975365875853,
+      "change_5d": 13.104098962155364,
       "change_unit": "%",
-      "stale": true,
-      "feed_status": "stale",
-      "feed_error": "Expecting value: line 1 column 1 (char 0)"
+      "stale": false,
+      "feed_status": "ok"
     },
     "brent": {
       "label": "Brent Crude",
       "kind": "price",
-      "value": 126.55,
-      "date": "2026-10-14",
+      "value": 115.22,
+      "date": "2026-10-20",
       "source": "EIA via FRED",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 0.6121799968198394,
-      "change_5d": 0.43650793650793496,
+      "change_1d": -3.0297929641474486,
+      "change_5d": -8.395611384957869,
       "change_unit": "%",
-      "stale": true,
-      "feed_status": "stale",
-      "feed_error": "Expecting value: line 1 column 1 (char 0)"
+      "stale": false,
+      "feed_status": "ok"
     },
     "vix": {
       "label": "VIX",
       "kind": "index",
-      "value": 18.44,
-      "date": "2026-10-19",
+      "value": 17.31,
+      "date": "2026-10-20",
       "source": "Cboe via FRED",
       "prefix": "",
       "decimals": 2,
-      "change_1d": -7.753876938469217,
-      "change_5d": 21.236028928336626,
+      "change_1d": -6.127982646420838,
+      "change_5d": 13.359528487229856,
       "change_unit": "%",
-      "stale": true,
-      "feed_status": "stale",
-      "feed_error": "Expecting value: line 1 column 1 (char 0)"
+      "stale": false,
+      "feed_status": "ok"
     },
     "hy_oas": {
       "label": "US HY OAS",
       "kind": "spread",
-      "value": 3.29,
-      "date": "2026-10-19",
+      "value": 3.33,
+      "date": "2026-10-20",
       "source": "ICE BofA via FRED",
       "prefix": "",
       "decimals": 2,
-      "change_1d": -2.0000000000000018,
-      "change_5d": 18.000000000000014,
+      "change_1d": 4.0000000000000036,
+      "change_5d": 16.999999999999993,
       "change_unit": " bp",
-      "stale": true,
-      "feed_status": "stale",
-      "feed_error": "Expecting value: line 1 column 1 (char 0)"
+      "stale": false,
+      "feed_status": "ok"
     },
     "gold_silver": {
       "label": "Gold / Silver ratio",
       "kind": "ratio",
-      "value": 71.28740163842066,
-      "date": "2026-10-21",
+      "value": 72.81182966321157,
+      "date": "2026-10-22",
       "source": "Derived",
       "decimals": 1,
       "stale": false,
@@ -319,8 +312,8 @@
     "brent_wti": {
       "label": "Brent – WTI spread",
       "kind": "price",
-      "value": 24.64,
-      "date": "2026-10-14",
+      "value": 7.329999999999998,
+      "date": "2026-10-20",
       "source": "Derived",
       "decimals": 2,
       "stale": false,
@@ -413,13 +406,13 @@
     "copper": {
       "label": "Copper (COMEX)",
       "kind": "price",
-      "value": 6.571000099182129,
-      "date": "2026-10-21",
+      "value": 6.416500091552734,
+      "date": "2026-10-22",
       "source": "COMEX copper futures via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 0.06852832001629228,
-      "change_5d": -0.612564297109619,
+      "change_1d": -1.9333658172411394,
+      "change_5d": -1.4589540338930451,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -493,13 +486,13 @@
     "sonia": {
       "label": "SONIA",
       "kind": "yield",
-      "value": 3.7337,
-      "date": "2026-10-19",
+      "value": 3.734,
+      "date": "2026-10-20",
       "source": "Bank of England",
       "prefix": "",
       "decimals": 2,
-      "change_1d": -0.0700000000000145,
-      "change_5d": 0.13999999999998458,
+      "change_1d": 0.0300000000000189,
+      "change_5d": 0.20999999999999908,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -508,12 +501,12 @@
       "label": "€STR",
       "kind": "yield",
       "value": 2.44,
-      "date": "2026-10-20",
+      "date": "2026-10-21",
       "source": "European Central Bank",
       "prefix": "",
       "decimals": 2,
-      "change_1d": -0.09999999999998899,
-      "change_5d": 0.09999999999998899,
+      "change_1d": 0.0,
+      "change_5d": 0.0,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -522,7 +515,7 @@
       "label": "ECB deposit facility",
       "kind": "yield",
       "value": 2.5,
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "source": "European Central Bank",
       "prefix": "",
       "decimals": 2,
@@ -535,7 +528,7 @@
     "us_jp_2y": {
       "label": "US–Japan 2Y spread",
       "kind": "spread",
-      "value": 281.79999999999995,
+      "value": 283.8,
       "date": "2026-09-30",
       "source": "Derived",
       "decimals": 0,
@@ -546,8 +539,8 @@
     "copper_gold": {
       "label": "Copper / Gold",
       "kind": "ratio",
-      "value": 1.5900668333276071,
-      "date": "2026-10-21",
+      "value": 1.5712653855695748,
+      "date": "2026-10-22",
       "source": "Derived",
       "decimals": 2,
       "stale": false,
@@ -556,8 +549,8 @@
     "uk_funding_proxy": {
       "label": "UK 5Y funding proxy",
       "kind": "yield",
-      "value": 8.26610701821918,
-      "date": "2026-10-19",
+      "value": 8.299345439870542,
+      "date": "2026-10-20",
       "source": "Derived: sovereign 5Y + US HY OAS (directional, not a lending quote)",
       "decimals": 2,
       "stale": false,
@@ -566,8 +559,8 @@
     "eu_funding_proxy": {
       "label": "Euro 5Y funding proxy",
       "kind": "yield",
-      "value": 6.5,
-      "date": "2026-10-19",
+      "value": 6.550000000000001,
+      "date": "2026-10-20",
       "source": "Derived: sovereign 5Y + US HY OAS (directional, not a lending quote)",
       "decimals": 2,
       "stale": false,
@@ -644,11 +637,11 @@
         },
         {
           "label": "Germany 5Y",
-          "value": "-3 bp"
+          "value": "+3 bp"
         },
         {
           "label": "HY OAS",
-          "value": "+18 bp"
+          "value": "+17 bp"
         },
         {
           "label": "SONIA",
@@ -686,38 +679,31 @@
   "feed_health": [
     {
       "name": "FRED DGS2",
-      "status": "error",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "status": "ok"
     },
     {
       "name": "FRED DGS5",
-      "status": "error",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "status": "ok"
     },
     {
       "name": "FRED DGS10",
-      "status": "error",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "status": "ok"
     },
     {
       "name": "FRED DCOILWTICO",
-      "status": "error",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "status": "ok"
     },
     {
       "name": "FRED DCOILBRENTEU",
-      "status": "error",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "status": "ok"
     },
     {
       "name": "FRED VIXCLS",
-      "status": "error",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "status": "ok"
     },
     {
       "name": "FRED BAMLH0A0HYM2",
-      "status": "error",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "status": "ok"
     },
     {
       "name": "Bank of England gilt curve",
