@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-04 15:26 UTC",
-  "build": "edeb6ca",
-  "market_status": "1 feed issue · 1 stale",
+  "generated_at": "2026-11-04 19:43 UTC",
+  "build": "a6b4f90",
+  "market_status": "2 feed issues · 3 stale",
   "headline": [
     "uk10",
     "de10",
@@ -154,8 +154,9 @@
       "change_1d": 0.6640139745436757,
       "change_5d": 1.597723979088328,
       "change_unit": "%",
-      "stale": false,
-      "feed_status": "ok"
+      "stale": true,
+      "feed_status": "stale",
+      "feed_error": "Required ECB leg unavailable"
     },
     "gbpcad": {
       "label": "GBP / CAD",
@@ -182,8 +183,9 @@
       "change_1d": -0.02407338351768651,
       "change_5d": 0.18165203605895464,
       "change_unit": "%",
-      "stale": false,
-      "feed_status": "ok"
+      "stale": true,
+      "feed_status": "stale",
+      "feed_error": "Required ECB leg unavailable"
     },
     "audjpy": {
       "label": "AUD / JPY",
@@ -202,13 +204,13 @@
     "gold": {
       "label": "Gold spot",
       "kind": "price",
-      "value": 4030.38999,
+      "value": 4058.36931,
       "date": "2026-11-04",
       "source": "Twelve Data",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 2.8370599025881793,
-      "change_5d": 3.7800472326559698,
+      "change_1d": 3.5509637714477016,
+      "change_5d": 4.500497402079295,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -216,13 +218,13 @@
     "silver": {
       "label": "Silver spot (futures proxy)",
       "kind": "price",
-      "value": 52.084999084472656,
+      "value": 52.255001068115234,
       "date": "2026-11-04",
       "source": "COMEX silver futures fallback via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 5.037605003794532,
-      "change_5d": -2.566551862527322,
+      "change_1d": 5.380440782264095,
+      "change_5d": -2.248535547894337,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -231,13 +233,13 @@
     "platinum": {
       "label": "Platinum spot (futures proxy)",
       "kind": "price",
-      "value": 1482.0,
+      "value": 1497.5999755859375,
       "date": "2026-11-04",
       "source": "NYMEX platinum futures fallback via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 3.4627181472038027,
-      "change_5d": -4.257382477851445,
+      "change_1d": 4.551797686442072,
+      "change_5d": -3.24956702854019,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -246,13 +248,13 @@
     "wti": {
       "label": "WTI Crude",
       "kind": "price",
-      "value": 103.37,
-      "date": "2026-10-27",
+      "value": 99.64,
+      "date": "2026-11-03",
       "source": "EIA via FRED",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -1.7862232779097376,
-      "change_5d": -4.1894522198535515,
+      "change_1d": -0.4197481511093337,
+      "change_5d": -3.608397020412113,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -260,13 +262,13 @@
     "brent": {
       "label": "Brent Crude",
       "kind": "price",
-      "value": 123.1,
-      "date": "2026-10-27",
+      "value": 107.03,
+      "date": "2026-11-03",
       "source": "EIA via FRED",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -3.9182016859194535,
-      "change_5d": 6.839090435688244,
+      "change_1d": -0.33522674364465654,
+      "change_5d": -13.05442729488221,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -302,7 +304,7 @@
     "gold_silver": {
       "label": "Gold / Silver ratio",
       "kind": "ratio",
-      "value": 77.3810129757979,
+      "value": 77.66470628734368,
       "date": "2026-11-04",
       "source": "Derived",
       "decimals": 1,
@@ -312,8 +314,8 @@
     "brent_wti": {
       "label": "Brent – WTI spread",
       "kind": "price",
-      "value": 19.72999999999999,
-      "date": "2026-10-27",
+      "value": 7.390000000000001,
+      "date": "2026-11-03",
       "source": "Derived",
       "decimals": 2,
       "stale": false,
@@ -406,13 +408,13 @@
     "copper": {
       "label": "Copper (COMEX)",
       "kind": "price",
-      "value": 6.397500038146973,
+      "value": 6.416999816894531,
       "date": "2026-11-04",
       "source": "COMEX copper futures via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 0.29787651408974547,
-      "change_5d": -3.6738682252273835,
+      "change_1d": 0.6035875557798942,
+      "change_5d": -3.380263184818466,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -421,13 +423,13 @@
     "uranium": {
       "label": "Uranium equities proxy (URA)",
       "kind": "price",
-      "value": 32.81999969482422,
+      "value": 32.63999938964844,
       "date": "2026-11-04",
       "source": "Global X Uranium ETF via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -0.6959139108796641,
-      "change_5d": -10.205197319003567,
+      "change_1d": -1.2405441962986652,
+      "change_5d": -10.697674224429242,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -508,23 +510,23 @@
       "change_1d": 0.40000000000000036,
       "change_5d": 0.49999999999998934,
       "change_unit": " bp",
-      "stale": false,
-      "feed_status": "ok"
+      "stale": true,
+      "feed_status": "stale",
+      "feed_error": "504 Server Error: Gateway Time-out for url: https://data-api.ecb.europa.eu/service/data/EST/B.EU000A2X2A25.WT?format=csvdata&lastNObservations=12"
     },
     "ecb_deposit": {
       "label": "ECB deposit facility",
       "kind": "yield",
       "value": 2.5,
-      "date": "2026-11-03",
+      "date": "2026-11-04",
       "source": "European Central Bank",
       "prefix": "",
       "decimals": 2,
       "change_1d": 0.0,
       "change_5d": 0.0,
       "change_unit": " bp",
-      "stale": true,
-      "feed_status": "stale",
-      "feed_error": "504 Server Error: Gateway Time-out for url: https://data-api.ecb.europa.eu/service/data/FM/D.U2.EUR.4F.KR.DFR.LEV?format=csvdata&lastNObservations=12"
+      "stale": false,
+      "feed_status": "ok"
     },
     "us_jp_2y": {
       "label": "US–Japan 2Y spread",
@@ -540,7 +542,7 @@
     "copper_gold": {
       "label": "Copper / Gold",
       "kind": "ratio",
-      "value": 1.587315384868493,
+      "value": 1.5811769030193388,
       "date": "2026-11-04",
       "source": "Derived",
       "decimals": 2,
@@ -728,7 +730,8 @@
     },
     {
       "name": "ECB FX USD",
-      "status": "ok"
+      "status": "error",
+      "message": "504 Server Error: Gateway Time-out for url: https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?format=csvdata&lastNObservations=260"
     },
     {
       "name": "ECB FX GBP",
@@ -790,12 +793,12 @@
     },
     {
       "name": "€STR",
-      "status": "ok"
+      "status": "error",
+      "message": "504 Server Error: Gateway Time-out for url: https://data-api.ecb.europa.eu/service/data/EST/B.EU000A2X2A25.WT?format=csvdata&lastNObservations=12"
     },
     {
       "name": "ECB deposit facility",
-      "status": "error",
-      "message": "504 Server Error: Gateway Time-out for url: https://data-api.ecb.europa.eu/service/data/FM/D.U2.EUR.4F.KR.DFR.LEV?format=csvdata&lastNObservations=12"
+      "status": "ok"
     }
   ]
 }
