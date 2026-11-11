@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-11 19:33 UTC",
-  "build": "a6993c5",
+  "generated_at": "2026-11-11 23:28 UTC",
+  "build": "b3dc8ac",
   "market_status": "All feeds current",
   "headline": [
     "uk10",
@@ -202,13 +202,13 @@
     "gold": {
       "label": "Gold spot",
       "kind": "price",
-      "value": 3989.18444,
-      "date": "2026-11-11",
+      "value": 3982.76675,
+      "date": "2026-11-12",
       "source": "Twelve Data",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -1.0232091927417475,
-      "change_5d": -1.8246827063969184,
+      "change_1d": -0.10698884633854044,
+      "change_5d": -2.047936076364576,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -216,13 +216,13 @@
     "silver": {
       "label": "Silver spot (futures proxy)",
       "kind": "price",
-      "value": 51.779998779296875,
+      "value": 51.39500045776367,
       "date": "2026-11-11",
       "source": "COMEX silver futures fallback via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 1.3287352824436827,
-      "change_5d": -0.6523410582418343,
+      "change_1d": 0.5753286789962342,
+      "change_5d": -1.3910178222923397,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -231,13 +231,13 @@
     "platinum": {
       "label": "Platinum spot (futures proxy)",
       "kind": "price",
-      "value": 1535.300048828125,
+      "value": 1531.5,
       "date": "2026-11-11",
       "source": "NYMEX platinum futures fallback via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -0.23393173882807483,
-      "change_5d": 2.2783341415243186,
+      "change_1d": -0.4808645328912786,
+      "change_5d": 2.0251831928913555,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -302,7 +302,7 @@
     "gold_silver": {
       "label": "Gold / Silver ratio",
       "kind": "ratio",
-      "value": 77.0410300124416,
+      "value": 77.493272001681,
       "date": "2026-11-11",
       "source": "Derived",
       "decimals": 1,
@@ -406,13 +406,13 @@
     "copper": {
       "label": "Copper (COMEX)",
       "kind": "price",
-      "value": 6.273499965667725,
+      "value": 6.256999969482422,
       "date": "2026-11-11",
       "source": "COMEX copper futures via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 0.8682353927939923,
-      "change_5d": -2.0224881263598338,
+      "change_1d": 0.6029408190620256,
+      "change_5d": -2.2801797787082356,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -421,13 +421,13 @@
     "uranium": {
       "label": "Uranium equities proxy (URA)",
       "kind": "price",
-      "value": 33.7140007019043,
+      "value": 33.63999938964844,
       "date": "2026-11-11",
       "source": "Global X Uranium ETF via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 1.7013549021561936,
-      "change_5d": 3.1009171721918083,
+      "change_1d": 1.4781232012523793,
+      "change_5d": 2.874613470267362,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -453,8 +453,8 @@
     "vix_front": {
       "label": "VIX front future",
       "kind": "index",
-      "value": 19.9067,
-      "date": "2026-11-10",
+      "value": 18.0519,
+      "date": "2026-11-11",
       "source": "Cboe official settlement",
       "decimals": 2,
       "stale": false,
@@ -464,8 +464,8 @@
     "vix_second": {
       "label": "VIX second future",
       "kind": "index",
-      "value": 19.5125,
-      "date": "2026-11-10",
+      "value": 18.4042,
+      "date": "2026-11-11",
       "source": "Cboe official settlement",
       "decimals": 2,
       "stale": false,
@@ -475,13 +475,13 @@
     "vix_curve": {
       "label": "VIX front – second",
       "kind": "index",
-      "value": 0.39420000000000144,
-      "date": "2026-11-10",
+      "value": -0.3522999999999996,
+      "date": "2026-11-11",
       "source": "Derived from Cboe official settlements",
       "decimals": 2,
       "stale": false,
       "feed_status": "derived",
-      "signal": "BACKWARDATION"
+      "signal": "CONTANGO"
     },
     "sonia": {
       "label": "SONIA",
@@ -539,7 +539,7 @@
     "copper_gold": {
       "label": "Copper / Gold",
       "kind": "ratio",
-      "value": 1.5726272023831829,
+      "value": 1.5710184307133783,
       "date": "2026-11-11",
       "source": "Derived",
       "decimals": 2,
@@ -654,8 +654,8 @@
       ]
     },
     "carry": {
-      "status": "CONFIRM",
-      "summary": "At least one high-specificity stress confirmation is active.",
+      "status": "ARM",
+      "summary": "No high-specificity forced-deleveraging confirmation.",
       "drivers": [
         {
           "label": "USD/JPY vs 200D",
@@ -667,7 +667,7 @@
         },
         {
           "label": "VIX curve",
-          "value": "Backwardation"
+          "value": "Contango"
         },
         {
           "label": "CFTC yen",
