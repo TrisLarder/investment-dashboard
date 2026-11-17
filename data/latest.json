@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16 21:57 UTC",
-  "build": "1e7bfa0",
-  "market_status": "0 feed issues · 3 stale",
+  "generated_at": "2026-11-17 00:50 UTC",
+  "build": "72ac3d7",
+  "market_status": "1 feed issue · 4 stale",
   "headline": [
     "uk10",
     "de10",
@@ -202,13 +202,13 @@
     "gold": {
       "label": "Gold spot",
       "kind": "price",
-      "value": 3855.33604,
+      "value": 3859.92281,
       "date": "2026-11-17",
       "source": "Twelve Data",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -0.23546208557062576,
-      "change_5d": -0.729187039173651,
+      "change_1d": -0.11677022970589812,
+      "change_5d": -0.6110825777103313,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -216,13 +216,13 @@
     "silver": {
       "label": "Silver spot (futures proxy)",
       "kind": "price",
-      "value": 46.95000076293945,
-      "date": "2026-11-16",
+      "value": 47.0099983215332,
+      "date": "2026-11-17",
       "source": "COMEX silver futures fallback via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -4.244248622636793,
-      "change_5d": -10.680310670970595,
+      "change_1d": -4.121882036681656,
+      "change_5d": -10.566168749628524,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -231,13 +231,13 @@
     "platinum": {
       "label": "Platinum spot (futures proxy)",
       "kind": "price",
-      "value": 1448.800048828125,
-      "date": "2026-11-16",
+      "value": 1447.800048828125,
+      "date": "2026-11-17",
       "source": "NYMEX platinum futures fallback via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -2.667111264486055,
-      "change_5d": -7.199584028899042,
+      "change_1d": -2.7342929910564306,
+      "change_5d": -7.263637323241601,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -302,8 +302,8 @@
     "gold_silver": {
       "label": "Gold / Silver ratio",
       "kind": "ratio",
-      "value": 82.11578226518914,
-      "date": "2026-11-16",
+      "value": 82.10855026199692,
+      "date": "2026-11-17",
       "source": "Derived",
       "decimals": 1,
       "stale": false,
@@ -406,13 +406,13 @@
     "copper": {
       "label": "Copper (COMEX)",
       "kind": "price",
-      "value": 5.991000175476074,
-      "date": "2026-11-16",
+      "value": 5.989999771118164,
+      "date": "2026-11-17",
       "source": "COMEX copper futures via Yahoo Finance",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": -1.4557121473899315,
-      "change_5d": -5.333011448462333,
+      "change_1d": -1.4721675191354477,
+      "change_5d": -5.348819371200319,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok",
@@ -454,7 +454,7 @@
       "label": "VIX front future",
       "kind": "index",
       "value": 22.5309,
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "source": "Cboe official settlement",
       "decimals": 2,
       "stale": false,
@@ -465,7 +465,7 @@
       "label": "VIX second future",
       "kind": "index",
       "value": 21.1059,
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "source": "Cboe official settlement",
       "decimals": 2,
       "stale": false,
@@ -476,7 +476,7 @@
       "label": "VIX front – second",
       "kind": "index",
       "value": 1.4250000000000007,
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "source": "Derived from Cboe official settlements",
       "decimals": 2,
       "stale": false,
@@ -522,8 +522,9 @@
       "change_1d": 0.0,
       "change_5d": 0.0,
       "change_unit": " bp",
-      "stale": false,
-      "feed_status": "ok"
+      "stale": true,
+      "feed_status": "stale",
+      "feed_error": "HTTPSConnectionPool(host='data-api.ecb.europa.eu', port=443): Read timed out. (read timeout=35)"
     },
     "us_jp_2y": {
       "label": "US–Japan 2Y spread",
@@ -539,8 +540,8 @@
     "copper_gold": {
       "label": "Copper / Gold",
       "kind": "ratio",
-      "value": 1.553950190934867,
-      "date": "2026-11-16",
+      "value": 1.5518444450753575,
+      "date": "2026-11-17",
       "source": "Derived",
       "decimals": 2,
       "stale": false,
@@ -793,7 +794,8 @@
     },
     {
       "name": "ECB deposit facility",
-      "status": "ok"
+      "status": "error",
+      "message": "HTTPSConnectionPool(host='data-api.ecb.europa.eu', port=443): Read timed out. (read timeout=35)"
     }
   ]
 }
