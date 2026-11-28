@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-27 21:09 UTC",
-  "build": "3e080cf",
+  "generated_at": "2026-11-28 00:32 UTC",
+  "build": "9ab98f2",
   "market_status": "0 feed issues · 3 stale",
   "headline": [
     "uk10",
@@ -104,13 +104,13 @@
     "us2": {
       "label": "US Treasury 2Y",
       "kind": "yield",
-      "value": 4.63,
-      "date": "2026-11-24",
+      "value": 4.61,
+      "date": "2026-11-25",
       "source": "FRED / U.S. Treasury",
       "prefix": "",
       "decimals": 2,
-      "change_1d": 0.0,
-      "change_5d": -16.999999999999993,
+      "change_1d": -1.9999999999999574,
+      "change_5d": -18.99999999999995,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -118,13 +118,13 @@
     "us5": {
       "label": "US Treasury 5Y",
       "kind": "yield",
-      "value": 4.69,
-      "date": "2026-11-24",
+      "value": 4.65,
+      "date": "2026-11-25",
       "source": "FRED / U.S. Treasury",
       "prefix": "",
       "decimals": 2,
-      "change_1d": -4.999999999999982,
-      "change_5d": -20.999999999999996,
+      "change_1d": -4.0000000000000036,
+      "change_5d": -23.999999999999932,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -132,13 +132,13 @@
     "us10": {
       "label": "US Treasury 10Y",
       "kind": "yield",
-      "value": 4.91,
-      "date": "2026-11-24",
+      "value": 4.85,
+      "date": "2026-11-25",
       "source": "FRED / U.S. Treasury",
       "prefix": "",
       "decimals": 2,
-      "change_1d": -0.9999999999999787,
-      "change_5d": -18.99999999999995,
+      "change_1d": -6.00000000000005,
+      "change_5d": -22.000000000000064,
       "change_unit": " bp",
       "stale": false,
       "feed_status": "ok"
@@ -202,13 +202,13 @@
     "gold": {
       "label": "Gold spot",
       "kind": "price",
-      "value": 3654.44218,
+      "value": 3654.57306,
       "date": "2026-11-28",
       "source": "Twelve Data",
       "prefix": "$",
       "decimals": 2,
-      "change_1d": 0.0012070387285456619,
-      "change_5d": 0.3024532540287117,
+      "change_1d": 0.00478847669707072,
+      "change_5d": 0.30604548081334393,
       "change_unit": "%",
       "stale": false,
       "feed_status": "ok"
@@ -302,7 +302,7 @@
     "gold_silver": {
       "label": "Gold / Silver ratio",
       "kind": "ratio",
-      "value": 83.6218527314837,
+      "value": 83.62484756011867,
       "date": "2026-11-27",
       "source": "Derived",
       "decimals": 1,
@@ -528,7 +528,7 @@
     "us_jp_2y": {
       "label": "US–Japan 2Y spread",
       "kind": "spread",
-      "value": 275.5,
+      "value": 273.50000000000006,
       "date": "2026-10-30",
       "source": "Derived",
       "decimals": 0,
@@ -539,7 +539,7 @@
     "copper_gold": {
       "label": "Copper / Gold",
       "kind": "ratio",
-      "value": 1.532518461356946,
+      "value": 1.532463577786983,
       "date": "2026-11-27",
       "source": "Derived",
       "decimals": 2,
